@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "$marca";
+  src: url(./../fonts/letramarca.ttf);
+}
+@font-face {
+  font-family: "$titulo2";
+  src: url(./../fonts/letratitulo2.ttf);
+}
+@font-face {
+  font-family: "$titulo";
+  src: url(./../fonts/titulos.ttf);
+}
+@font-face {
+  font-family: "$comun";
+  src: url(./../fonts/menus.ttf);
+}
+@font-face {
+  font-family: "$marca";
+  src: url(./../fonts/letramarca.ttf);
+}
+@font-face {
+  font-family: "$titulo2";
+  src: url(./../fonts/letratitulo2.ttf);
+}
+@font-face {
+  font-family: "$titulo";
+  src: url(./../fonts/titulos.ttf);
+}
+@font-face {
+  font-family: "$comun";
+  src: url(./../fonts/menus.ttf);
+}
+.footerindex {
+  background-color: #f9bed5;
+  height: 400px;
+  width: 100%;
+}
+.footerindex .formulario p {
+  color: #f9bed5;
+  font-weight: bold;
+  padding: 10px;
+}
+.footerindex .formulario textarea {
+  width: 200px;
+  height: 50px;
+}
+.footerindex .menufinal {
+  list-style: none;
+  padding: 20px;
+  line-height: 30px;
+  text-align: center;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.footerindex .menufinal li {
+  width: 180px;
+  display: inline-block;
+}
+.footerindex .menufinal a {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  color: #800f2f;
+  border-right: 1px solid;
+}
+.footerindex .menumedia {
+  display: flex;
+  justify-content: center;
+}
+.footerindex .menumedia li {
+  width: 60px;
+  display: inline-block;
+}
+.footerindex .copy, .footerindex .copy2 {
+  text-align: center;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=styles.css.map */

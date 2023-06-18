@@ -1,0 +1,54 @@
+@import 'colores.scss';
+@import'_medidas.scss';
+@import '_tipografia';
+
+.footerindex{
+    background-color: $color-foot;
+    height: 400px;
+    width: 100%;
+    .formulario{
+                p{
+                    color: $color-foot;
+                    font-weight: bold;
+                    padding: 10px;}
+                textarea{
+                    width: 200px;
+                    height: 50px;}
+                }
+
+    .menufinal{
+        list-style: none;
+        padding: 20px;
+        line-height: 30px;
+        text-align: center;
+        overflow: auto;
+        margin-bottom: 10px;
+        
+        li{
+            width: 180px;
+            display: inline-block;
+        }
+        a{
+            display: block;
+           
+            font-weight: bold;
+            font-size: $name-producto;
+            color: $color-tx-foot;
+            border-right: 1px solid;
+        }
+
+    } 
+    .menumedia{
+        display: flex;
+        justify-content: center;
+        li{
+            width: 60px;
+            display: inline-block;
+        }
+    }     
+    
+    .copy,.copy2{
+        text-align: center;
+        font-size: 13px;
+    }
+}

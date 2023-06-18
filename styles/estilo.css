@@ -1,0 +1,3257 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* FUENTES */
+@font-face {
+  font-family: "letramarca";
+  src: url(./../fonts/letramarca.ttf);
+}
+
+@font-face {
+  font-family: "titulo2";
+  src: url(./../fonts/letratitulo2.ttf);
+}
+@font-face {
+  font-family: "letratitulos";
+  src: url(./../fonts/titulos.ttf);
+}
+@font-face {
+  font-family: "menus";
+  src: url(./../fonts/menus.ttf);
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background-color: #f8c7da;
+}
+
+.banner {
+  background-color: #93051889;
+  text-align: center;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #fffefe;
+}
+
+/* TITULO DE LA MARCA */
+
+h1 {
+  font-family: "letramarca";
+  font-size: 75px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 20px;
+}
+.by {
+  text-align: center;
+  font-size: 20px;
+}
+/*Iconos menu */
+.iconos {
+  display: flex;
+  flex-direction: column;
+}
+.nav-item-icono {
+  background-color: #f8c7da;
+  padding: 5px;
+}
+.nav-item-icono a:hover {
+  background-color: #ff85e9f9;
+}
+
+/* -MENUPPAL- */
+
+.nav-item li a {
+  background-color: #f6f6f6 !important;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 14px;
+  font-family: "menus";
+}
+
+.dropdown-menu a:hover {
+  background-color: #ea94ccf9 !important;
+  text-align: center;
+}
+
+.cuidado-titulo {
+  font-family: "menus";
+  letter-spacing: normal;
+  font-weight: lighter;
+}
+/* SECCION DESCUENTOS */
+
+.descuentos {
+  display: none;
+  height: 500px;
+  width: 100%;
+}
+
+.imgdescuento {
+  display: none;
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+.descuento-img {
+  display: none;
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+/* SECCION 1 */
+.contenedoruno {
+  height: 485px;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.caja1 {
+  display: flex;
+  width: 1050px;
+  height: 540px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.perfil {
+  height: 420px;
+  padding: 10px;
+  margin-right: 40px;
+}
+.presentacion {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "menus";
+}
+.hola {
+  border-right: 1px solid;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.caja2 {
+  display: flex;
+  justify-content: left;
+  margin-left: 1080px;
+  margin-top: -460px;
+}
+.videoinicio {
+  display: flex;
+  width: 600px;
+  border-color: 3px solid;
+}
+/* SECCION2 */
+.seccion2 {
+  display: grid;
+  background-color: #f9e1ef;
+  height: 630px;
+  width: 100%;
+}
+.disenio {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 40px;
+  font-size: 30px;
+  font-family: "menus";
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.row {
+  display: grid;
+  grid-template-columns: 330px 330px 330px 330px;
+  grid-template-rows: 1fr 1px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.modelo1,
+.modelo2,
+.modelo4,
+.modelo5 {
+  display: grid;
+  grid-template-columns: 235px;
+  grid-template-rows: 300px;
+}
+.img1,
+.img2,
+.img4,
+.img5 {
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.descripcion {
+  text-align: center;
+  font-family: "menus";
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 2px;
+}
+.cuotas {
+  text-align: center;
+  font-family: "menus";
+}
+.precio {
+  text-align: center;
+  font-family: "menus";
+  margin-top: 5px;
+  color: #100000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* SECCION 3 */
+.seccion3 {
+  background-color: #e2dde0;
+  width: 100%;
+  height: 600px;
+}
+.titulo {
+  text-align: center;
+  font-family: "menus";
+  text-decoration: overline;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.contenedorimg {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+.imgA {
+  margin-right: 50px;
+  height: 350px;
+  border: 2px solid;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.imgA:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.imgB {
+  margin-right: 50px;
+  height: 350px;
+  border: 2px solid;
+  margin-left: 100px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.imgB:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.imgC {
+  margin-right: 50px;
+  height: 350px;
+  border: 2px solid;
+  margin-left: 100px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.imgC:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.imgD {
+  margin-left: 50px;
+  height: 350px;
+  border: 2px solid;
+  margin-left: 70px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.imgD:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+.footerindex {
+  height: 400px;
+  background-color: #f9bed5;
+  width: 100%;
+}
+.formulario {
+  padding: 0px;
+  margin: 0px;
+}
+.formulario p {
+  color: #800f2f;
+  font-weight: bold;
+  padding: 10px;
+}
+.menufinal {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 200px;
+  height: 50px;
+}
+.menufinal li {
+  width: 180px;
+  display: inline-block;
+}
+.menufinal a {
+  text-decoration: none;
+  display: block;
+  font-family: "menus";
+  font-weight: bold;
+  font-size: 20px;
+  color: #800f2f;
+  border-right: 1px solid;
+}
+
+.menufinal li a:hover {
+  background-color: #fee7f0;
+}
+.copy,
+.copy2 {
+  text-align: center;
+  font-size: 13px;
+}
+.menumedia {
+  display: flex;
+  justify-content: center;
+}
+.menumedia li {
+  width: 60px;
+  display: inline-block;
+}
+/* INDEX CUIDADOS */
+.cuidado-titulo {
+  font-size: 45px;
+  font-family: "letratitulo2";
+  letter-spacing: normal;
+}
+.page-cuidado {
+  display: grid;
+  width: 100%;
+
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main  main"
+    "foot foot";
+}
+.page-cuidado > header {
+  grid-area: head;
+  height: 345px;
+  background-color: #f8c7da;
+}
+.page-cuidado > nav {
+  grid-area: nav;
+  background-color: #ecf1fb;
+}
+.page-cuidado > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 420px;
+  row-gap: 49px;
+  column-gap: 49px;
+  padding: 15px;
+}
+.col-cuidado {
+  display: flex;
+  padding: 10px;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 3px;
+  border: 1px solid #0f0000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.item2 {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid #0b0101;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+  justify-self: center;
+}
+.item3 {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.item4 {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.item5 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.item6 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.txgrid {
+  font-size: 18px;
+  font-family: "menus";
+  list-style-type: circle;
+}
+.tigrid {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "menus";
+}
+.page-cuidado > footer {
+  grid-area: foot;
+  background-color: #f9bed5;
+}
+
+/* SECCION CONOCEME */
+.headpages-1 {
+  height: 282px;
+  width: 100%;
+}
+.quiensoy {
+  height: 1245px;
+  width: 100%;
+  background-color: #f6eef5;
+}
+.nav-item li a {
+  background-color: #f6f6f6 !important;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  font-family: "menus";
+  font-size: 14px;
+}
+.dropdown-menu a:hover {
+  background-color: #ea94ccf9;
+  text-align: center;
+}
+.presentacion-titulo {
+  font-family: "menu";
+  font-size: 40px;
+  letter-spacing: normal;
+  padding: 20px;
+}
+.contenedor1 {
+  display: flex;
+  background-color: #fadfeb;
+}
+.yo {
+  height: 500px;
+  width: 450px;
+  margin-top: 50px;
+}
+.texto1 {
+  width: 900px;
+  height: 510px;
+  margin-left: 6px;
+  margin-top: 130px;
+  font-size: 20px;
+  padding-left: 23px;
+  font-family: "menus";
+}
+.contenedor2 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f1e6eb;
+}
+.emprender {
+  display: flex;
+  margin-bottom: 30px;
+  height: 450px;
+  padding: 20px;
+  margin-right: -50px;
+}
+.text2 {
+  width: 782px;
+  height: 590px;
+  font-family: "menus";
+  margin-top: 30px;
+  text-align: justify;
+  font-size: 20px;
+  align-items: center;
+}
+
+/* SECCION PROCESO CREATIVO */
+.proceso-titulo {
+  font-size: 45px;
+  font-family: "letratitulo2";
+  letter-spacing: normal;
+}
+.container-proceso {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1325px;
+}
+.tx-proceso {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: "menus";
+  align-items: center;
+  width: 800px;
+}
+.paso {
+  width: 195px;
+  font-size: 22px;
+  background-color: rgb(246, 174, 230);
+}
+.titulospaso {
+  display: flex;
+  font-weight: bold;
+}
+.videoproceso {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: 300px;
+  padding: 45px;
+}
+.footer {
+  height: 210px;
+  background-color: rgba(171, 76, 88, 0.8);
+}
+.formulario {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  color: rgba(248, 167, 167, 0.8);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+/* BENEFICIOS */
+
+.page-beneficio {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../img/fondo.jpeg");
+}
+.beneficios-titulo {
+  font-size: 45px;
+  font-family: "letratitulo2";
+  letter-spacing: normal;
+}
+.videobeneficios {
+  display: flex;
+  height: 600px;
+  padding: 30px;
+  margin-left: 100px;
+  align-items: stretch;
+}
+
+.beneficios-tx {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: 653px;
+  height: 540px;
+  margin-left: 666px;
+  margin-top: -560px;
+  font-family: "menus";
+  font-size: 20px;
+  align-items: center;
+}
+.footer {
+  height: 210px;
+}
+/* MODA SOSTENIBLE */
+.page-moda {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.sostenible-titulo {
+  font-size: 50px;
+  font-family: "letratitulo2";
+  letter-spacing: normal;
+}
+.subtitulo-moda {
+  font-size: 30px;
+  font-family: "letratitulo2";
+  font-style: italic;
+  text-align: center;
+}
+.row-a {
+  display: grid;
+  grid-template-columns: 706px 630px 330px 330px;
+  grid-template-rows: 1fr 1px;
+  row-gap: 32px;
+  column-gap: 130px;
+  align-items: center;
+}
+.textomoda {
+  font-size: 23px;
+  font-family: "menus";
+  text-align: center;
+}
+.textomoda2 {
+  font-family: "menus";
+  font-size: 20px;
+  text-align: center;
+}
+.titulomoda,
+.titulomoda2 {
+  text-align: center;
+  background-color: #d1f9be;
+  font-weight: bold;
+}
+
+.moda1,
+.moda2,
+.moda3 {
+  padding: 10px;
+}
+.row-b {
+  display: grid;
+  grid-template-columns: 380px 470px 518px 330px;
+  grid-template-rows: 1fr 1px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+/* UBICACION */
+.head-mapa {
+  width: 100%;
+  height: 265px;
+}
+.mapa {
+  width: 100%;
+  height: 600px;
+  background-color: #ffffff;
+}
+.mapagoogle {
+  width: 720px;
+  height: 550px;
+  padding: 50px 60px;
+}
+
+.ubicacion-titulo {
+  font-family: "menu";
+  font-size: 55px;
+  font-weight: 100;
+  letter-spacing: normal;
+}
+.textoubi {
+  display: flex;
+  background-color: #fed6e9;
+  width: 600px;
+  height: 410px;
+  margin: -490px 780px;
+  justify-content: right;
+}
+.buscar {
+  border-left: 2px solid;
+  padding: 15px;
+  text-align: center;
+  font-family: "menus";
+  font-size: 20px;
+}
+.retiro {
+  font-family: "menus";
+  font-size: 25px;
+  text-align: justify;
+  padding: 50px;
+}
+.tx-responsive {
+  display: none;
+  text-align: center;
+  width: 100px;
+  height: 200px;
+}
+.tx-r {
+  display: none;
+}
+/* SECCION BANDOLERA */
+.piuma {
+  text-align: center;
+  font-family: "letramarca";
+  font-size: 20px;
+}
+.page {
+  display: grid;
+  width: 100%;
+
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main  main"
+    "foot foot";
+  grid-template-rows: 110px 30px;
+  grid-template-columns: 1fr 100px;
+}
+.page > header {
+  grid-area: head;
+  height: 300px;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  background-color: #ecf1fb;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+
+.bandolera-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  font-family: "fuentetitulos";
+  font-size: 34px;
+  text-align: center;
+  padding: 20px;
+  font-style: oblique;
+}
+.container_bandolera {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+}
+.b1 {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+
+.nombre-bandolera {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-bandolera {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+}
+.cuotasbandoleras {
+  text-align: center;
+  font-family: "menus";
+}
+
+.page > footer {
+  grid-area: foot;
+  background-color: #f9bed5;
+}
+
+/* MOCHILAS */
+.page {
+  display: grid;
+  width: 100%;
+
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main  main"
+    "foot foot";
+  grid-template-rows: 165px 50px;
+  grid-template-columns: 1fr 100px;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.mochila-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.container_mochila {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+}
+.m1 {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.nombre-mochila {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-mochila {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+}
+.cuotasmochilas {
+  text-align: center;
+  font-family: "menus";
+}
+
+.page > footer {
+  grid-area: foot;
+  background-color: #f9bed5;
+}
+.logo {
+  display: flex;
+  border-radius: 60%;
+  border: 1px solid;
+}
+
+/* SECCION RIÑONERA */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.rinionera-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_rinionera {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.r1 {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.nombre-rinionera {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-rinionera {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotasrinionera {
+  text-align: center;
+  font-family: "menus";
+}
+
+/* NECESERES*/
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.neceseres-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_neceseres {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.n1 {
+  display: flex;
+  width: 430px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.nombre-neceser {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-neceser {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotasneceser {
+  text-align: center;
+  font-family: "menus";
+}
+/* BOLSOS */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.bolsos-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_bolsos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.bs {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.nombre-bolso {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-bolso {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotasbolso {
+  text-align: center;
+  font-family: "menus";
+}
+
+/* SECCION BILLETERAS */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+
+.billetera-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_billeteras {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.bi {
+  display: flex;
+  width: 400px;
+  height: 420px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotas-producto {
+  text-align: center;
+  font-family: "menus";
+}
+/* SECCION COMPLEMENTOS */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.complementos-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_complementos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.c {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotas-producto {
+  text-align: center;
+  font-family: "menus";
+}
+/* BOLSOS MATEROS */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.mate-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_mate {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.bm {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotas-producto {
+  text-align: center;
+  font-family: "menus";
+}
+/* SOBRES */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.sobres-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+  justify-items: center;
+}
+.container_sobres {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.s {
+  display: flex;
+  width: 440px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotas-producto {
+  text-align: center;
+  font-family: "menus";
+}
+/* SECCION FUNDAS NOTEBOOKS */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.funda-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+  font-size: 25px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_fundas {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.fn {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page > nav {
+  grid-area: nav;
+  height: 100%;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotas-producto {
+  text-align: center;
+  font-family: "menus";
+}
+/* SECCION CARTERAS */
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.cartera-titulo {
+  font-family: "menu";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+
+.subtitulo-titulos {
+  padding: 0px;
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.container_carteras {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.ca {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page > header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+
+.page > nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #f1e4f3;
+}
+.page > main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+
+.nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "menus";
+}
+.precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "menus";
+  padding: 8px;
+}
+.cuotas-producto {
+  text-align: center;
+  font-family: "menus";
+}
+/* ------------------TABLET--------------------- */
+
+@media only screen and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-family: "letramarca";
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  .subtitulo {
+    text-align: center;
+    font-size: 20px;
+  }
+  .by {
+    text-align: center;
+    font-size: 20px;
+  }
+  /* SECCION DESCUENTOS */
+  .descuentos {
+    display: flex;
+    height: 440px;
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 115px;
+  }
+  .imgdescuento {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+  .descuento-img {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+  /* /MENU INDEX/ */
+
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  /* SECCION 1 */
+  .contenedoruno {
+    height: 750px;
+    width: 100%;
+    background-color: #fefcfd;
+  }
+  .caja1 {
+    width: 100%;
+    height: 390px;
+    background-color: #ffe4f7f5;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+  }
+  .perfil {
+    height: 400px;
+    padding: 10px;
+  }
+  .presentacion {
+    text-align: center;
+    font-size: 20px;
+    font-family: "menus";
+  }
+  .hola {
+    border: none;
+    font-size: 30px;
+    padding: 30px 50px;
+  }
+  .imgcaja2 {
+    display: none;
+  }
+  .caja2 {
+    display: none;
+  }
+
+  /* SECCION2 */
+  .seccion2 {
+    display: grid;
+  }
+  .disenio {
+    display: flex;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 202px 232px 235px 230px;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+  }
+  .modelo1,
+  .modelo2,
+  .modelo4,
+  .modelo5 {
+    display: grid;
+  }
+  .modelo1 {
+    margin-left: -30px;
+  }
+  .descripcion {
+    text-align: center;
+    font-family: "menus";
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 2px;
+  }
+  .cuotas {
+    text-align: center;
+    font-family: "menus";
+  }
+  .precio {
+    text-align: center;
+    font-family: "menus";
+    margin-top: 5px;
+    color: #100000;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  /* SECCION 3 */
+  .seccion3 {
+    width: 100%;
+    height: 100%;
+  }
+  .titulo {
+    text-align: center;
+    font-family: "menus";
+    text-decoration: overline;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  .contenedorimg {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    height: 800px;
+    flex-wrap: wrap;
+  }
+
+  .imgA {
+    margin-right: 50px;
+    height: 350px;
+    width: 300px;
+    border: 2px solid;
+  }
+
+  .imgB {
+    margin-right: 5px;
+    height: 350px;
+    width: 300px;
+    border: 2px solid;
+    margin-left: 100px;
+  }
+
+  .imgC {
+    margin-right: 80px;
+    height: 350px;
+    width: 300px;
+    border: 2px solid;
+    margin-left: 0px;
+  }
+
+  .imgD {
+    margin-left: 50px;
+    height: 350px;
+    width: 300px;
+    border: 2px solid;
+    margin-left: 70px;
+  }
+
+  /* FOOTER */
+  .footerindex {
+    height: 400px;
+    background-color: #f9bed5;
+    width: 100%;
+  }
+  .mf {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    overflow: auto;
+    margin-bottom: 30px;
+  }
+  .menufinal li {
+    width: 180px;
+    display: inline-block;
+  }
+  .menufinal a {
+    text-decoration: none;
+    display: block;
+    font-family: "menus";
+    font-weight: bold;
+    font-size: 20px;
+    color: #800f2f;
+    border-right: 1px solid;
+  }
+  .menufinal li a:hover {
+    background-color: #fee7f0;
+  }
+  .copy,
+  .copy2 {
+    text-align: center;
+    font-size: 13px;
+  }
+  .menumedia {
+    display: flex;
+    justify-content: center;
+  }
+  .menumedia li {
+    width: 75px;
+    display: inline-block;
+  }
+
+  /* INDEX CUIDADOS */
+
+  .cuidado-titulo {
+    font-size: 45px;
+  }
+  .page-cuidado {
+    display: grid;
+    width: 100%;
+  }
+
+  .page-cuidado {
+    display: grid;
+    width: 100%;
+
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main  main"
+      "foot foot";
+  }
+  .page-cuidado > header {
+    grid-area: head;
+    height: 345px;
+    background-color: #f8c7da;
+  }
+  .page-cuidado > nav {
+    grid-area: nav;
+    background-color: #ecf1fb;
+  }
+  .page-cuidado > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .row2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 360px;
+    row-gap: 50px;
+    column-gap: 65px;
+    padding: 35px;
+  }
+  .col-cuidado {
+    display: flex;
+    padding: 10px;
+  }
+
+  .item1 {
+    display: flex;
+  }
+  .item2 {
+    display: flex;
+  }
+  .item3 {
+    display: flex;
+  }
+  .item4 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .item5 {
+    display: flex;
+  }
+  .item6 {
+    display: flex;
+  }
+  .txgrid {
+    font-size: 18px;
+    font-family: "menus";
+    list-style-type: circle;
+  }
+  .tigrid {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "fuentetitulos";
+  }
+  .page-cuidado > footer {
+    grid-area: foot;
+    background-color: #f9bed5;
+  }
+
+  /* UBICACION */
+  .headpages {
+    height: 250px;
+    width: 100%;
+  }
+  .mapa {
+    width: 100%;
+    height: 660px;
+    background-color: #ffffff;
+  }
+  .ubicacion-titulo {
+    font-family: "menu";
+    font-size: 55px;
+    letter-spacing: normal;
+  }
+  .mapagoogle {
+    width: 1000px;
+    height: 520px;
+  }
+  .textoubi {
+    display: none;
+  }
+  .buscar {
+    display: none;
+  }
+  .retiro {
+    display: none;
+  }
+  .tx-responsive {
+    display: flex;
+    text-align: justify;
+    width: 439px;
+    height: 122px;
+    font-size: 25px;
+    background-color: #f893d6;
+    margin-top: -10px;
+    margin-left: 287px;
+  }
+  .tx-r {
+    display: inline;
+    text-align: center;
+    font-family: "menus";
+  }
+  .footer-ubi {
+    background-color: #f9bed5;
+    width: 100%;
+  }
+
+  /* SECCION CONOCEME */
+
+  .quiensoy {
+    height: 100%;
+    width: 100%;
+    background-color: #fae9f0;
+  }
+  .presentacion-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+    padding: 20px;
+  }
+
+  .contenedor1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+  }
+  .yo {
+    height: 450px;
+    margin-top: 100px;
+  }
+  .texto1 {
+    width: 798px;
+    height: 885px;
+    margin-left: 30px;
+    font-size: 24px;
+    padding-left: 23px;
+  }
+  .contenedor2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .emprender {
+    display: flex;
+    margin-top: 200px;
+    height: 320px;
+    width: 350px;
+    padding: 0;
+    border: none;
+    margin-left: 30px;
+  }
+  .text2 {
+    width: 800px;
+    height: 850px;
+    font-family: "menus";
+    font-size: 24px;
+    margin-left: 75px;
+    border: none;
+    text-align: left;
+  }
+  .footer-soy {
+    background-color: #f9bed5;
+    width: 100%;
+  }
+  /* MODA SOSTENIBLE */
+  .page-moda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .sostenible-titulo {
+    font-size: 50px;
+    font-family: "letratitulo2";
+    letter-spacing: normal;
+  }
+  .subtitulo-moda {
+    font-size: 30px;
+    font-family: "letratitulo2";
+    font-style: italic;
+    text-align: center;
+  }
+  .row-a {
+    display: grid;
+    grid-template-columns: 400px 455px 332px 309px;
+    grid-template-rows: 1fr 1px;
+    column-gap: 146px;
+    align-items: stretch;
+  }
+  .textomoda {
+    padding: 30px;
+    font-size: 20px;
+    font-family: "menus";
+    text-align: center;
+  }
+  .textomoda2 {
+    font-family: "menus";
+    font-size: 18px;
+    text-align: justify;
+  }
+  .titulomoda {
+    text-align: center;
+    background-color: #d1f9be;
+  }
+  .titulomoda2 {
+    text-align: center;
+    background-color: #d1f9be;
+  }
+  .moda1,
+  .moda2,
+  .moda3 {
+    display: flex;
+    padding: 10px;
+  }
+  .moda1 {
+    width: 530px;
+    height: 530px;
+  }
+  .moda2,
+  .moda3 {
+    width: 300px;
+    height: 300px;
+  }
+  .row-b {
+    display: grid;
+    grid-template-columns: 260px 319px 380px 330px;
+    grid-template-rows: 1fr 1px;
+    row-gap: 19px;
+    column-gap: 8px;
+    align-items: stretch;
+  }
+  /* BENEFICIOS */
+
+  .page-beneficio {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./../img/fondo.jpeg");
+  }
+  .beneficios-titulo {
+    font-size: 35px;
+    font-family: "letratitulo2";
+    letter-spacing: normal;
+  }
+  .videobeneficios {
+    display: flex;
+    height: 910px;
+    padding: 225px;
+    margin-left: -260px;
+    margin-top: -148px;
+    align-items: stretch;
+  }
+
+  .beneficios-tx {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 423px;
+    height: 680px;
+    margin-left: 509px;
+    margin-top: -740px;
+    align-items: stretch;
+    font-family: "menus";
+    font-size: 20px;
+  }
+  .footer {
+    height: 210px;
+  }
+
+  /* SECCION PROCESO CREATIVO */
+  .proceso-titulo {
+    font-family: "letratitulo2";
+    font-weight: lighter;
+  }
+  .container-proceso {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1000px;
+  }
+}
+/* -----------MOBILE------------ */
+@media only screen and (max-width: 420px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* /MENU INDEX/ */
+  header {
+    height: 100%;
+    width: 100%;
+    background-color: #f8c7da;
+  }
+
+  .banner {
+    background-color: #93051889;
+    font-size: 12px;
+  }
+  .nav-item-icono {
+    background-color: #f8c7da;
+    height: 50px;
+    width: 50px;
+  }
+
+  /* TITULO DE LA MARCA */
+
+  h1 {
+    font-family: "letramarca";
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+
+  .subtitulo {
+    text-align: center;
+    font-size: 15px;
+  }
+  .by {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .descuentos {
+    width: 100%;
+    height: 300px;
+    margin-left: 1px;
+  }
+  .imgdescuento {
+    width: 100%;
+    height: 350px;
+  }
+  .descuento-img {
+    width: 100%;
+    height: 250px;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  /* SECCION 1 */
+  .contenedoruno {
+    height: 100%;
+    width: 100%;
+    background-color: #fefcfd;
+  }
+  .caja1 {
+    display: flex;
+    width: 100%;
+    height: 385px;
+    background-color: #ffeffa;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  .perfil {
+    height: 330px;
+    width: 280px;
+    margin-right: -2px;
+  }
+  a {
+    font-family: "fuentetitulos";
+    font-style: normal;
+    text-decoration: none;
+    background-color: #fefbff;
+  }
+  .presentacion {
+    height: 100%;
+    font-size: 20px;
+    font-family: "menus";
+    background-color: rgb(255, 255, 255);
+  }
+  .hola {
+    border-right: none;
+    text-align: center;
+    height: 215px;
+    font-size: 30px;
+    width: 260px;
+  }
+  .imgcaja2 {
+    display: none;
+  }
+  .caja2 {
+    display: none;
+  }
+
+  /* SECCION2 */
+
+  .seccion2 {
+    background-color: #f9e1ef;
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    margin-top: 530px;
+  }
+  .disenio {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-family: "menus";
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+  .modelo1,
+  .modelo2,
+  .modelo3,
+  .modelo4,
+  .modelo5 {
+    margin-left: 100px;
+  }
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5 {
+    height: 200px;
+    width: 200px;
+  }
+  .seccion-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 155px;
+    width: 215px;
+    margin-top: -85px;
+  }
+  .descripcion {
+    text-align: center;
+    font-family: "menus";
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2px 2px;
+  }
+  .cuotas {
+    text-align: center;
+    font-family: "menus";
+  }
+  .precio {
+    text-align: center;
+    font-family: "menus";
+    margin-top: 5px;
+    color: #100000;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  /* SECCION 3 */
+  .seccion3 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+
+  .titulo {
+    text-align: center;
+    font-family: "menus";
+    text-decoration: overline;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .contenedorimg {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 265px;
+    height: 1059px;
+    padding: 14px 94px;
+    justify-items: end;
+    margin-top: 24px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .imgA,
+  .imgB,
+  .imgC,
+  .imgD {
+    display: flex;
+    width: 210px;
+    height: 230px;
+    margin-right: 90px;
+  }
+
+  /* FOOTER */
+  .footerindex {
+    height: 540px;
+    background-color: #f9bed5;
+    width: 100%;
+  }
+  .formulario {
+    padding: 0px;
+    margin: 0px;
+  }
+  .formulario p {
+    color: #800f2f;
+    font-weight: bold;
+    padding: 30px;
+  }
+  input[type="submit" i] {
+    background-color: #f3225d84;
+    width: 94px;
+    height: 55px;
+    font-weight: bold;
+  }
+  textarea {
+    width: 200px;
+    height: 70px;
+  }
+  .mf {
+    background-color: #f9bed5;
+    list-style: none;
+    padding: 35px;
+    margin: 0;
+    text-align: center;
+    overflow: auto;
+  }
+  .menufinal li {
+    width: 180px;
+    display: inline-block;
+  }
+  .menufinal li a:hover {
+    background-color: #f9bed5;
+  }
+
+  .copy,
+  .copy2 {
+    text-align: center;
+    font-size: 10px;
+  }
+  /* INDEX CUIDADOS */
+  .navbar navbar-expand-lg bg-body-tertiary {
+    margin-bottom: 20px;
+  }
+  .headpages {
+    height: 250px;
+    width: 100%;
+  }
+
+  .cuidado-titulo {
+    font-family: "menu";
+    letter-spacing: normal;
+    font-weight: lighter;
+    font-size: 35px;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .cuadricula {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .row2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 420px;
+  }
+  .item1 {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .item2 {
+    border-radius: 10px;
+    text-align: center;
+  }
+  .item3 {
+    border-radius: 10px;
+    text-align: center;
+  }
+  .item4 {
+    border-radius: 10px;
+    text-align: center;
+  }
+  .item5 {
+    border-radius: 10px;
+    text-align: center;
+  }
+  .item6 {
+    border-radius: 10px;
+    text-align: center;
+  }
+  .txgrid {
+    font-size: 18px;
+    font-family: "menus";
+    list-style-type: circle;
+  }
+  .tigrid {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "fuentetitulos";
+  }
+  /* BENEFICIOS */
+  .headpages-beneficios {
+    width: 100%;
+    height: 250px;
+  }
+  .page-beneficio {
+    width: 100%;
+    background-image: none;
+    background-color: #fee7f0;
+  }
+  .beneficios-titulo {
+    font-size: 30px;
+    letter-spacing: normal;
+    font-family: "letratitulo2";
+  }
+  .videobeneficios {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .beneficios-tx {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 314px;
+    height: 877px;
+    margin-left: 49px;
+    margin-top: -193px;
+    align-items: center;
+    font-family: "menus";
+    font-size: 20px;
+  }
+  /* SECCION PROCESO CREATIVO */
+  .proceso-titulo {
+    font-family: "letratitulo2";
+
+    letter-spacing: normal;
+  }
+  .container-proceso {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 390px;
+    flex-wrap: wrap;
+  }
+  .tx-proceso {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "menus";
+    align-items: center;
+    width: 400px;
+  }
+  .paso {
+    width: 195px;
+    font-size: 22px;
+    background-color: rgb(246, 174, 230);
+  }
+  .titulospaso {
+    display: flex;
+    font-weight: bold;
+  }
+  .videoproceso {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 405px;
+    height: 630px;
+  }
+  /* MODA SOSTENIBLE */
+  .page-moda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .sostenible-titulo {
+    font-size: 40px;
+  }
+  .subtitulo-moda {
+    font-size: 20px;
+  }
+  .row-a {
+    display: grid;
+    grid-template-columns: 8px 390px;
+    grid-template-rows: 1fr 1px;
+    column-gap: 3px;
+  }
+  .row-b {
+    display: grid;
+    grid-template-columns: 220px 5px 150px 330px;
+    grid-template-rows: 1fr 1px;
+    row-gap: 4px;
+    column-gap: 9px;
+    align-items: stretch;
+  }
+  .textomoda {
+    padding: 30px;
+    font-size: 20px;
+    font-family: "menus";
+    text-align: center;
+    margin-top: 275px;
+  }
+  .textomoda2 {
+    font-family: "menus";
+    font-size: 18px;
+    margin-top: 230px;
+    margin-left: -230px;
+    text-align: center;
+  }
+  .titulomoda {
+    text-align: center;
+    background-color: #d1f9be;
+  }
+  .titulomoda2 {
+    text-align: center;
+    background-color: #d1f9be;
+  }
+  .moda1,
+  .moda2,
+  .moda3 {
+    display: flex;
+    padding: 10px;
+  }
+  .moda1 {
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+  }
+  .moda2,
+  .moda3 {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* SECCION CONOCEME */
+
+  .quiensoy2 {
+    height: 100%;
+    width: 100%;
+    background-color: #fae9f0;
+  }
+  .presentacion-titulo {
+    font-family: "menu";
+    font-size: 35px;
+    letter-spacing: normal;
+    padding: 10px;
+  }
+  .pagequiensoy > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .pagequiensoy > header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+  .contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .yo {
+    width: 300px;
+    height: 350px;
+    margin-top: 20px;
+  }
+  .texto1 {
+    width: 100%;
+    margin-right: 30px;
+    margin-top: 33px;
+    font-size: 20px;
+    border-left: none;
+    font-family: "menus";
+    height: 1070px;
+  }
+  .contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 1100px;
+  }
+  .text2 {
+    width: 800px;
+    height: 600px;
+    font-family: "menus";
+    font-size: 19px;
+    margin-right: 20px;
+    border: none;
+    margin-bottom: 60px;
+  }
+
+  .emprender {
+    display: none;
+  }
+
+  .text2 {
+    width: 800px;
+    height: 600px;
+    font-family: "menus";
+    font-size: 19px;
+    margin-right: 50px;
+    border: none;
+    margin-bottom: 60px;
+  }
+  .footerpages {
+    height: 550px;
+  }
+
+  /* UBICACION */
+
+  .headpages-ubicacion {
+    height: 100%;
+    width: 100%;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .mapa {
+    width: 100%;
+    height: 600px;
+    background-color: #ffffff;
+  }
+
+  .ubicacion-titulo {
+    font-family: "menu";
+    font-size: 45px;
+    letter-spacing: normal;
+  }
+  .mapagoogle {
+    width: 415px;
+    height: 350px;
+    padding: 17px 27px;
+    margin-top: 50px;
+  }
+
+  .textoubi {
+    display: none;
+  }
+  .buscar {
+    display: none;
+  }
+  .retiro {
+    display: none;
+  }
+  .tx-responsive {
+    display: flex;
+    background-color: #f893d6;
+    width: 300px;
+    height: 130px;
+    margin-left: 65px;
+    padding: 20px;
+    border-style: double;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .tx-r {
+    display: inline;
+    text-align: center;
+    font-family: "menus";
+  }
+
+  /* SECCION BANDOLERA */
+  .piuma {
+    text-align: center;
+    font-family: "letramarca";
+    font-size: 20px;
+  }
+  .page {
+    display: grid;
+    width: 100%;
+
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main  main"
+      "foot foot";
+    grid-template-rows: 180px 30px;
+    grid-template-columns: 1fr 100px;
+  }
+
+  .page > header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #ecf1fb;
+  }
+
+  .bandolera-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .subtitulo-titulos {
+    font-family: "fuentetitulos";
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-style: oblique;
+  }
+
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .container_bandolera {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .b1 {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 40px 60px;
+    border-radius: 15%;
+  }
+
+  .nombre-bandolera {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "menus";
+    padding: 10px;
+  }
+  .precio-bandolera {
+    text-align: center;
+    font-size: 18px;
+    font-family: "menus";
+    padding: 8px;
+  }
+  .cuotasbandoleras {
+    text-align: center;
+    font-family: "menus";
+  }
+  #page > footer {
+    grid-area: foot;
+    background-color: #f9bed5;
+  }
+
+  .footerpages {
+    height: 100%;
+    background-color: #f9bed5;
+  }
+
+  /* MOCHILAS */
+  .page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main main"
+      "foot foot";
+    grid-template-rows: 232px 49px;
+    grid-template-columns: 1fr 200px;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .dropdown-menu ul li a {
+    font-weight: bold;
+  }
+  .nav-item li a {
+    background-color: #f6f6f6;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "menus";
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .dropdown-menu a:hover {
+    background-color: #ea94ccf9;
+    text-align: center;
+  }
+  .page > nav {
+    grid-area: nav;
+    height: 67px;
+    background-color: #f1e4f3;
+  }
+
+  .mochila-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .container_mochila {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .m1 {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 40px 60px;
+  }
+
+  .nombre-mochila {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "menus";
+    padding: 10px;
+  }
+  .precio-mochila {
+    text-align: center;
+    font-size: 18px;
+    font-family: "menus";
+    padding: 8px;
+  }
+  .cuotasmochilas {
+    text-align: center;
+    font-family: "menus";
+  }
+
+  #page > footer {
+    height: 515px;
+    grid-area: foot;
+    background-color: #f9bed5;
+  }
+  .logo {
+    display: flex;
+    border-radius: 60%;
+    border: 1px solid;
+  }
+  .footerpages {
+    height: 100%;
+    width: 100%;
+    background-color: #f9bed5;
+  }
+
+  /* SECCION RIÑONERA */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .rinionera-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .page > header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .footerpages {
+    height: 100%;
+    width: 100%;
+    background-color: #f9bed5;
+  }
+  /* NECESERES*/
+
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .neceseres-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .page > header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  .nombre-neceser {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "menus";
+  }
+  .precio-neceser {
+    text-align: center;
+    font-size: 16px;
+    font-family: "menus";
+    padding: 8px;
+  }
+  .cuotasneceser {
+    text-align: center;
+    font-family: "menus";
+  }
+  .footerpages {
+    height: 600px;
+    width: 100%;
+    background-color: #f9bed5;
+  }
+
+  /* BOLSOS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .bolsos-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  /* SECCION BILLETERAS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .billetera-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .bi {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  /* SECCION COMPLEMENTOS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .complementos-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .c {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  /* BOLSOS MATEROS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .mate-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .bm {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  /* SOBRES */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .sobres-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+
+  .s {
+    display: flex;
+    width: 420px;
+    height: 380px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+
+  .nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "menus";
+  }
+  .precio-producto {
+    text-align: center;
+    font-size: 18px;
+    font-family: "menus";
+    padding: 8px;
+  }
+  .cuotas-producto {
+    text-align: center;
+    font-family: "menus";
+  }
+  /* SECCION FUNDAS NOTEBOOKS */
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+
+  .funda-titulo {
+    font-family: "menu";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .subtitulo-titulos {
+    padding: 0px;
+    font-size: 20px;
+  }
+  .page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main main"
+      "foot foot";
+    grid-template-rows: 270px 60px;
+    grid-template-columns: 100px;
+  }
+
+  .page > header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+
+  .page > nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #f1e4f3;
+  }
+  .page > main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+}
