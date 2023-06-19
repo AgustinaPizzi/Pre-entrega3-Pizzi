@@ -1,0 +1,772 @@
+// BANDOLERA
+.page{
+    .page {
+        display: grid;
+        width: 100%;
+         grid-template-areas:
+          "head head"
+          "nav nav"
+          "main  main"
+          "foot foot";
+        grid-template-rows: 110px 30px;
+        grid-template-columns: 1fr 100px;
+      }
+      .page > header {
+        grid-area: head;
+        height: 300px;
+        background-color:$color-head;
+      }
+      .page > nav {
+        grid-area: nav;
+        background-color: $color-nav;
+      }
+      .page > main {
+        grid-area: main;
+        display: flex;
+        background-color:$color-main;
+      }
+      .menupages {
+        @include menupag(absolute,310px)
+      }
+      .piuma{
+        text-align: center;
+        font-family: "$marca";
+        font-size: $marca-paginas;
+    }
+     .bandolera-titulo {
+       font-family: "$titulo";
+       font-size: $titulo-paginas;
+       letter-spacing: normal;
+     
+    }
+      .subtitulo-titulos {
+        font-family: "$titulo";
+        font-size: $subtitulo-paginas;
+        text-align: center;
+        padding: 20px;
+        font-style: oblique;
+      }
+      .container_bandolera {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $blanco;
+        .b1{
+            display: flex;
+            @include ancho-alto(415px,400px);
+            padding:40px 50px;
+            border-radius: 15%;
+        }
+        .nombre-producto{
+                font-size: $name-producto;
+                font-weight: bold;
+                text-align: center;
+                font-family: "$comun";
+            }
+        .precio-producto{
+                text-align: center;
+                font-size: $precio-producto;
+                font-family: "$comun";
+            }
+        .cuotas-producto{
+                text-align: center;
+                font-family: "$comun";
+            }
+       }
+}
+// MOCHILAS
+.page{
+     .page{
+       display: grid;
+       width: 100%;
+       grid-template-areas:
+       "head head"
+       "nav nav"
+       "main  main"
+       "foot foot";
+       grid-template-rows: 165px 50px;
+       grid-template-columns: 1fr 100px;
+    }
+    .page > header {
+      grid-area: head;
+      height: 300px;
+      background-color: $color-head;
+    }
+    .page > nav {
+      grid-area: nav;
+      background-color: $color-nav;
+    }
+    .page > main {
+      grid-area: main;
+      display: flex;
+      background-color: $color-main;
+    }
+    .page > footer {
+      grid-area: foot;
+      background-color: $color-foot;
+    }
+    .menupages {
+    @include menupag(absolute,310px);
+    }
+    .mochila-titulo {
+      font-family: "$titulo";
+      font-size: $titulo-paginas;
+      letter-spacing: normal;
+    }
+    .container_mochila {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: $blanco;
+      .m1 {
+        display: flex;
+        @include ancho-alto(415px,400px);
+        padding: 40px 50px;
+        border-radius: 15%;
+      }
+        .nombre-producto{
+        font-size: $name-producto;
+        font-weight: bold;
+        text-align: center;
+        font-family: "$comun";
+    }
+        .precio-producto{
+        text-align: center;
+        font-size: $precio-producto;
+        font-family: "$comun";
+    }
+      .cuotas-producto{
+        text-align: center;
+        font-family: "$comun";
+    }
+  }
+}
+  
+// RIÑONERA
+.page{
+      .page{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+         "head head"
+         "nav nav"
+         "main main"
+        "foot foot";
+        grid-template-rows: 270px 60px;
+        grid-template-columns: 100px;
+    
+        header {
+         grid-area: head;
+         background-color:$color-head;
+        }
+        
+        nav {
+         grid-area: nav;
+         height: 65px;
+         background-color: $color-nav;
+        }
+    
+        main {
+         grid-area: main;
+         display: flex;
+         background-color: $color-main; 
+        }
+      }   
+      .menupages {
+        @include menupag(absolute,310px);
+  }
+      .rinionera-titulo {
+      font-family: "$titulo";
+      font-size: $titulo-paginas;
+      font-style: normal;
+      letter-spacing: normal;
+     }
+      .subtitulo-titulos {
+      padding: 0%;
+      }
+      .container_rinionera {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #f8e9f2;
+      .r1 {
+        display: flex;
+        @include ancho-alto(415px,400px);
+        padding: 40px 50px;
+        border-radius: 15%;
+      }
+      .nombre-producto{
+        font-size: $name-producto;
+        font-weight: bold;
+        text-align: center;
+        font-family: "$comun";
+    }
+      .precio-producto{
+        text-align: center;
+        font-size: $precio-producto;
+        font-family: "$comun";
+    }
+      .cuotas-producto{
+        text-align: center;
+        font-family: "$comun";
+    }
+  }
+}
+// NECESERES
+.page{
+      .page{ 
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+          "head head"
+          "nav nav"
+          "main main"
+          "foot foot";
+        grid-template-rows: 270px 60px;
+        grid-template-columns: 100px;
+        header{
+          grid-area: head;
+          background-color: $color-head;
+        }
+        nav{
+          grid-area: nav;
+          height: 65px;
+          background-color:$color-nav
+        }
+        main{
+          grid-area: main;
+          display: flex;
+          background-color: $color-main; 
+        }
+      }
+        .menupages {
+         @include menupag(absolute,310px);
+        }
+        .neceseres-titulo {
+          font-family: "$titulo2";
+          font-size: $titulo-paginas;
+          letter-spacing: normal;
+        }
+        .subtitulo-titulos {
+          padding: 0px;
+        }
+        .container_neceseres {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: stretch;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: #f8e9f2;
+          .n1 {
+            display: flex;
+           @include ancho-alto(415px,410px);
+            padding: 40px 50px;
+            border-radius: 15%;
+          }
+          .nombre-producto{
+            font-size: $name-producto;
+            font-weight: bold;
+            text-align: center;
+            font-family: "$comun";
+          }
+          .precio-producto{
+            text-align: center;
+            font-size: $precio-producto;
+            font-family: "$comun";
+          }
+          .cuotas-producto{
+            text-align: center;
+            font-family: "$comun";
+        }
+    }
+  }
+
+  // BOLSOS
+.page{
+      .page{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+        "head head"
+        "nav nav"
+        "main main"
+        "foot foot";
+        grid-template-rows: 270px 60px;
+        grid-template-columns: 100px;
+      header{
+        grid-area: head;
+        background-color: $color-head;
+      }
+      nav{
+        grid-area: nav;
+        height: 65px;
+        background-color: $color-nav; 
+      }
+      main{
+        grid-area: main;
+        display: flex;
+        background-color: $color-main;
+      }
+      }
+      .menupages {
+       @include menupag(absolute,310px)
+      }
+      .bolsos-titulo {
+        font-family: "$comun";
+        font-size: $titulo-paginas;
+        letter-spacing: normal;
+      }
+      .subtitulo-titulos {
+        padding: 0px;
+      }
+      .container_bolsos {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #f8e9f2;
+        .bs {
+          display: flex;
+          @include ancho-alto(415px,400px);
+          padding: 40px 50px;
+          border-radius: 15%;
+        }
+      .nombre-producto{
+        font-size: $name-producto;
+        font-weight: bold;
+        text-align: center;
+        font-family: "$comun";
+       }
+      .precio-producto{
+        text-align: center;
+        font-size: $precio-producto;
+        font-family: "$comun";
+      }
+      .cuotas-producto{
+        text-align: center;
+        font-family: "$comun";
+      }
+    }
+}
+// BILLETERAS
+.page{
+    .page{
+      display: grid;
+     width: 100%;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main main"
+      "foot foot";
+    grid-template-rows: 270px 60px;
+    grid-template-columns: 100px;
+    header{
+      grid-area: head;
+      background-color: $color-head;
+    }
+    nav{
+      grid-area: nav;
+      height: 65px;
+      background-color: $color-nav;
+    }
+    main{
+      grid-area: main;
+      display: flex;
+      background-color: $color-main;
+    }
+  }
+  .menupages {
+  @include menupag(absolute,310px);
+  }
+  
+  .billetera-titulo {
+    font-family: "menu";
+    font-size: $titulo-paginas;
+    letter-spacing: normal;
+  }
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+  .container_billeteras {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f8e9f2;
+    .bi {
+      display: flex;
+      @include ancho-alto(415px,400px);
+      padding: 40px 50px;
+      border-radius: 15%;
+    }
+    .nombre-producto{
+      font-size: $name-producto;
+      font-weight: bold;
+      text-align: center;
+      font-family: "$comun";
+    }
+    .precio-producto{
+      text-align: center;
+      font-size: $precio-producto;
+      font-family: "$comun";
+    }
+    .cuotas-producto{
+      text-align: center;
+      font-family: "$comun";
+   }
+  }
+}
+// CARTERAS
+.page{
+  .page{
+    display: grid;
+   width: 100%;
+  grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+  header{
+    grid-area: head;
+    background-color: $color-head;
+  }
+  nav{
+    grid-area: nav;
+    height: 65px;
+    background-color: $color-nav;
+  }
+  main{
+    grid-area: main;
+    display: flex;
+    background-color: $color-main;
+  }
+}
+.menupages {
+@include menupag(absolute,310px);
+}
+
+.cartera-titulo {
+  font-family: "menu";
+  font-size: $titulo-paginas;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.container_carteras {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+  .ca {
+    display: flex;
+    @include ancho-alto(415px,400px);
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .nombre-producto{
+    font-size: $name-producto;
+    font-weight: bold;
+    text-align: center;
+    font-family: "$comun";
+  }
+  .precio-producto{
+    text-align: center;
+    font-size: $precio-producto;
+    font-family: "$comun";
+  }
+  .cuotas-producto{
+    text-align: center;
+    font-family: "$comun";
+  }
+  }
+}
+// FUNDAS NOTEBOOK
+.page{
+  .page{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+    grid-template-rows: 270px 60px;
+    grid-template-columns: 100px;
+  header{
+    grid-area: head;
+    background-color: $color-head;
+  }
+  nav{
+    grid-area: nav;
+    height: 65px;
+    background-color: $color-nav;
+  }
+  main{
+    grid-area: main;
+    display: flex;
+    background-color: $color-main;
+  }
+}
+.menupages {
+@include menupag(absolute,310px);
+}
+.funda-titulo {
+  font-family: "menu";
+  font-size: $titulo-paginas;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.container_fundas {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+  .fn {
+    display: flex;
+    @include ancho-alto(415px,400px);
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .nombre-producto{
+    font-size: $name-producto;
+    font-weight: bold;
+    text-align: center;
+    font-family: "$comun";
+  }
+  .precio-producto{
+    text-align: center;
+    font-size: $precio-producto;
+    font-family: "$comun";
+  }
+  .cuotas-producto{
+    text-align: center;
+    font-family: "$comun";
+  }
+}
+}
+// BOLSO MATERO
+
+.page{
+  .page{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+  
+  header{
+    grid-area: head;
+    background-color: $color-head;
+  }
+  nav{
+    grid-area: nav;
+    height: 65px;
+    background-color: $color-nav;
+  }
+  main{
+    grid-area: main;
+    display: flex;
+    background-color: $color-main;
+  }
+}
+.menupages {
+@include menupag(absolute,310px);
+}
+.mate-titulo {
+  font-family: "menu";
+  font-size: $titulo-paginas;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.container_mate {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+    .bm {
+    display: flex;
+    @include ancho-alto(415px,400px);
+    padding: 40px 50px;
+    border-radius: 15%;
+    }
+    .nombre-producto{
+      font-size: $name-producto;
+      font-weight: bold;
+      text-align: center;
+      font-family: "$comun";
+    }
+    .precio-producto{
+      text-align: center;
+      font-size: $precio-producto;
+      font-family: "$comun";
+    }
+    .cuotas-producto{
+      text-align: center;
+      font-family: "$comun";
+    }
+  }
+}
+// SECCION COMPLEMENTO
+.page{
+  .page{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+  
+  header{
+    grid-area: head;
+    background-color: $color-head;
+  }
+  nav{
+    grid-area: nav;
+    height: 65px;
+    background-color: $color-nav;
+  }
+  main{
+    grid-area: main;
+    display: flex;
+    background-color: $color-main;
+  }
+}
+.menupages {
+@include menupag(absolute,310px);
+}
+.complemento-titulo {
+  font-family: "menu";
+  font-size: $titulo-paginas;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.container_complementos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+    .c {
+    display: flex;
+    @include ancho-alto(415px,400px);
+    padding: 40px 50px;
+    border-radius: 15%;
+    }
+    .nombre-producto{
+      font-size: $name-producto;
+      font-weight: bold;
+      text-align: center;
+      font-family: "$comun";
+    }
+    .precio-producto{
+      text-align: center;
+      font-size: $precio-producto;
+      font-family: "$comun";
+    }
+    .cuotas-producto{
+      text-align: center;
+      font-family: "$comun";
+    }
+  }
+}
+
+// SOBRES
+.page{
+  .page{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+  
+  header{
+    grid-area: head;
+    background-color: $color-head;
+  }
+  nav{
+    grid-area: nav;
+    height: 65px;
+    background-color: $color-nav;
+  }
+  main{
+    grid-area: main;
+    display: flex;
+    background-color: $color-main;
+  }
+}
+.menupages {
+@include menupag(absolute,310px);
+}
+.sobres-titulo {
+  font-family: "menu";
+  font-size: $titulo-paginas;
+  letter-spacing: normal;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.container_sobres {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+    .s {
+    display: flex;
+    @include ancho-alto(415px,400px);
+    padding: 40px 50px;
+    border-radius: 15%;
+    }
+    .nombre-producto{
+      font-size: $name-producto;
+      font-weight: bold;
+      text-align: center;
+      font-family: "$comun";
+    }
+    .precio-producto{
+      text-align: center;
+      font-size: $precio-producto;
+      font-family: "$comun";
+    }
+    .cuotas-producto{
+      text-align: center;
+      font-family: "$comun";
+    }
+  }
+}

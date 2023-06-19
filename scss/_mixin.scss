@@ -1,0 +1,12 @@
+@mixin ancho-alto ($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin alineacion-tamanio ($text-align, $font-size){
+    text-align: $text-align;
+    font-size: $font-size;
+}
+@mixin menupag ($position, $margin-left){
+    position: $position;
+    margin-left: $margin-left;
+}

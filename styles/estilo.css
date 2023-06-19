@@ -302,6 +302,10 @@ h1 {
   font-weight: bold;
   padding: 10px;
 }
+textarea {
+  width: 200px;
+  height: 50px;
+}
 .menufinal {
   list-style: none;
   padding: 20px;
@@ -311,10 +315,7 @@ h1 {
   overflow: auto;
   margin-bottom: 10px;
 }
-textarea {
-  width: 200px;
-  height: 50px;
-}
+
 .menufinal li {
   width: 180px;
   display: inline-block;
@@ -799,11 +800,6 @@ textarea {
 .cuotasbandoleras {
   text-align: center;
   font-family: "menus";
-}
-
-.page > footer {
-  grid-area: foot;
-  background-color: #f9bed5;
 }
 
 /* MOCHILAS */

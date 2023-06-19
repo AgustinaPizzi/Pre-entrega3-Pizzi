@@ -1,0 +1,54 @@
+// SECCION DESCUENTO
+.descuentos{
+    display: none;
+    height: 500px;
+    width: 100%;
+    .imgdescuento{
+        display: none;
+        display: block;
+        width: 100%;
+        height: 500px;
+    }
+    .descuento-img{
+        display: none;
+        display: block;
+        width: 100%;
+        height: 500px;
+    }
+}
+.contenedoruno{
+    .caja1{
+        display: flex;
+        width: 1050px;
+        height: 540px;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .perfil {
+        height: 420px;
+        padding: 10px;
+        margin-right: 40px;
+    }
+    .presentacion {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        font-family: "$comun";
+    }
+    .hola {
+        border-right: 1px solid;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .caja2 {
+        display: flex;
+        justify-content: left;
+        margin-left: 1080px;
+        margin-top: -460px;
+      }
+      .videoinicio {
+        display: flex;
+        width: 600px;
+        border-color: 3px solid;
+      }
+}

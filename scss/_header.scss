@@ -1,0 +1,61 @@
+header{
+    height: 100%;
+    width: 100%;
+    background-color:$color-head;
+    .banner{
+        background-color: $color-banner;
+        text-align: center;
+        font-family: "Helvetica";
+        font-weight: bold;
+        color: #fffefe;
+    }
+    h1{
+        font-family: "$marca";
+        font-size: 75px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+    .subtitulo {
+        text-align: center;
+        font-size: 20px;
+      }
+      .by {
+        text-align: center;
+        font-size: 20px;
+      }
+    //   MENU PPAL
+    .nav-item li a {
+        background-color: #f6f6f6 !important;
+        color: black;
+        text-decoration: none;
+        padding: 8px;
+        font-size: 14px;
+        font-family: "$comun";
+      }
+      
+      .dropdown-menu a:hover {
+        background-color: $color-menuppal!important;
+        text-align: center;
+      }
+      
+      .cuidado-titulo {
+        font-family: "$comun";
+        letter-spacing: normal;
+        font-weight: lighter;
+      }
+
+    //   ICONOS MENU
+    .iconos {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-item-icono {
+        background-color: $color-head;
+        padding: 5px;
+      }
+      .nav-item-icono a:hover {
+        background-color:$icono-hover;
+      }
+}
+

@@ -1,0 +1,56 @@
+.seccion3{
+    background-color:$color-seccion3;
+    width: 100%;
+    height: 600px;
+    .titulo{
+        text-align: center;
+        font-family: "$comun";
+        text-decoration: overline;
+        letter-spacing: 1px;
+        font-size:$titulo-secciones;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+    .contenedorimg {
+        display: flex;
+        margin-top: 60px;
+        justify-content: center;
+        .imgA{
+            margin-right: 50px;
+            height:$alto-seccion3;
+            border: 2px solid;
+            border-radius: 10px;
+            transition: all 300ms;
+        }
+            .imgA:hover {
+                opacity: 0.5;
+                transform: scale(1.1);
+            }
+        
+        .imgB,.imgC{
+            margin-right: 50px;
+            height:$alto-seccion3;
+            border: 2px solid;
+            margin-left: 100px;
+            border-radius: 10px;
+            transition: all 300ms;
+        }
+            .imgB:hover,.imgC:hover{
+                opacity: 0.5;
+                transform: scale(1.1);
+            }
+        
+        .imgD{
+            margin-left: 50px;
+            height:$alto-seccion3;
+            border: 2px solid;
+            margin-left: 70px;
+            border-radius: 10px;
+            transition: all 300ms;
+        }
+        .imgD:hover {
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
+    }
+}
