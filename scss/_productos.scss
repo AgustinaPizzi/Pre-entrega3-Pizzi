@@ -10,21 +10,9 @@
           "foot foot";
         grid-template-rows: 110px 30px;
         grid-template-columns: 1fr 100px;
+        
       }
-      header {
-        grid-area: head;
-        height: 300px;
-        background-color:$color-head;
-      }
-      nav {
-        grid-area: nav;
-        background-color: $color-nav;
-      }
-      main {
-        grid-area: main;
-        display: flex;
-        background-color:$color-main;
-      }
+      
       .menupages {
         @include menupag(absolute,310px)
       }
@@ -85,9 +73,9 @@
        "nav nav"
        "main  main"
        "foot foot";
-       grid-template-rows: 165px 50px;
+       grid-template-rows: 110px 30px;
        grid-template-columns: 1fr 100px;
-    }
+   }
     header {
       grid-area: head;
       height: 300px;
