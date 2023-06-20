@@ -1,18 +1,2878 @@
-/* Error: Undefined variable.
- *    ,
- * 12 |         font-size:$titulo-secciones;
- *    |                   ^^^^^^^^^^^^^^^^^
- *    '
- *   scss\_seccion2.scss 12:19  @import
- *   scss\styles.scss 6:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 12 \2502          font-size:$titulo-secciones;\d\a    \2502                    ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\_seccion2.scss 12:19  @import\a   scss\\styles.scss 6:9       root stylesheet";
+@charset "UTF-8";
+@font-face {
+  font-family: "$marca";
+  src: url(./../fonts/letramarca.ttf);
 }
+@font-face {
+  font-family: "$letratitulo2";
+  src: url(./../fonts/letratitulo2.ttf);
+}
+@font-face {
+  font-family: "$comun";
+  src: url(./../fonts/menus.ttf);
+}
+@font-face {
+  font-family: "$title";
+  src: url(./../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+header {
+  height: 100%;
+  width: 100%;
+  background-color: #f8c7da;
+}
+header .banner {
+  background-color: rgba(147, 5, 24, 0.537254902);
+  text-align: center;
+  font-family: "Helvetica";
+  font-weight: bold;
+  color: #fffefe;
+}
+header h1 {
+  font-family: "$marca";
+  font-size: 75px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+header .subtitulo {
+  text-align: center;
+  font-size: 20px;
+}
+header .by {
+  text-align: center;
+  font-size: 20px;
+}
+header .nav-item li a {
+  background-color: #f6f6f6 !important;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 14px;
+  font-family: "$comun";
+}
+header .dropdown-menu a:hover {
+  background-color: rgba(234, 148, 204, 0.9764705882) !important;
+  text-align: center;
+}
+header .cuidado-titulo {
+  font-family: "$comun";
+  letter-spacing: normal;
+  font-weight: lighter;
+}
+header .iconos {
+  display: flex;
+  flex-direction: column;
+}
+header .nav-item-icono {
+  background-color: #f8c7da;
+  padding: 5px;
+}
+header .nav-item-icono a:hover {
+  background-color: rgba(255, 133, 233, 0.9764705882);
+}
+
+.footerindex {
+  width: 100%;
+  height: 450px;
+  background-color: #f9bed5;
+}
+.footerindex .formulario {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  color: rgba(248, 167, 167, 0.8);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+.footerindex p {
+  color: #800f2f;
+  font-weight: bold;
+  padding: 10px;
+}
+.footerindex textarea {
+  width: 200px;
+  height: 50px;
+}
+.footerindex .menufinal {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.footerindex .menufinal li {
+  width: 180px;
+  display: inline-block;
+}
+.footerindex .menufinal a {
+  text-decoration: none;
+  display: block;
+  font-family: "$comun";
+  font-weight: bold;
+  font-size: 20px;
+  color: #800f2f;
+  border-right: 1px solid;
+}
+.footerindex .menufinal li a:hover {
+  background-color: #fee7f0;
+}
+.footerindex .copy,
+.footerindex .copy2 {
+  font-family: "$comun";
+  text-align: center;
+  font-size: 13px;
+  color: black;
+  font-weight: lighter;
+}
+.footerindex .menumedia {
+  display: flex;
+  justify-content: center;
+}
+.footerindex .menumedia li {
+  width: 60px;
+  display: inline-block;
+}
+
+.descuentos {
+  display: none;
+  height: 500px;
+  width: 100%;
+}
+.descuentos .imgdescuento {
+  display: none;
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+.descuentos .descuento-img {
+  display: none;
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.contenedoruno .caja1 {
+  display: flex;
+  width: 1050px;
+  height: 540px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.contenedoruno .perfil {
+  height: 420px;
+  padding: 10px;
+  margin-right: 40px;
+}
+.contenedoruno .presentacion {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "$comun";
+}
+.contenedoruno .hola {
+  border-right: 1px solid;
+  font-size: 30px;
+  padding: 10px;
+}
+.contenedoruno .caja2 {
+  display: flex;
+  justify-content: left;
+  margin-left: 1080px;
+  margin-top: -460px;
+}
+.contenedoruno .videoinicio {
+  display: flex;
+  width: 600px;
+  border-color: 3px solid;
+}
+
+.seccion2 {
+  display: grid;
+  background-color: #f9e1ef;
+  height: 630px;
+  width: 100%;
+}
+.seccion2 .disenio {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 40px;
+  font-size: 30px;
+  font-family: "$comun";
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.seccion2 .row {
+  display: grid;
+  grid-template-columns: 330px 330px 330px 330px;
+  grid-template-rows: 1fr 1px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.seccion2 .modelo1,
+.seccion2 .modelo2,
+.seccion2 .modelo4,
+.seccion2 .modelo5 {
+  display: grid;
+  grid-template-columns: 235px;
+  grid-template-rows: 300px;
+}
+.seccion2 .img1,
+.seccion2 .img2,
+.seccion2 .img4,
+.seccion2 .img5 {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.seccion2 .descripcion {
+  text-align: center;
+  font-family: "$comun";
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 2px;
+}
+.seccion2 .cuotas {
+  text-align: center;
+  font-family: "$comun";
+}
+.seccion2 .precio {
+  text-align: center;
+  font-family: "$comun";
+  margin-top: 5px;
+  color: #100000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.seccion3 {
+  background-color: #e2dde0;
+  width: 100%;
+  height: 600px;
+}
+.seccion3 .titulo {
+  text-align: center;
+  font-family: "$comun";
+  text-decoration: overline;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.seccion3 .contenedorimg {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+.seccion3 .contenedorimg .imgA {
+  margin-right: 50px;
+  height: 350px;
+  border: 2px solid;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.seccion3 .contenedorimg .imgA:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.seccion3 .contenedorimg .imgB, .seccion3 .contenedorimg .imgC {
+  margin-right: 50px;
+  height: 350px;
+  border: 2px solid;
+  margin-left: 100px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.seccion3 .contenedorimg .imgB:hover, .seccion3 .contenedorimg .imgC:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.seccion3 .contenedorimg .imgD {
+  margin-left: 50px;
+  height: 350px;
+  border: 2px solid;
+  margin-left: 70px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.seccion3 .contenedorimg .imgD:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main  main" "foot foot";
+  grid-template-rows: 110px 30px;
+  grid-template-columns: 1fr 100px;
+}
+.page header {
+  grid-area: head;
+  height: 300px;
+  background-color: #f8c7da;
+}
+.page nav {
+  grid-area: nav;
+  background-color: #ecf1fb;
+}
+.page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .piuma {
+  text-align: center;
+  font-family: "$marca";
+  font-size: 20px;
+}
+.page .bandolera-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  font-family: "$comun";
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  font-style: oblique;
+}
+.page .container_bandolera {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+}
+.page .container_bandolera .b1 {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_bandolera .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_bandolera .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_bandolera .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main  main" "foot foot";
+  grid-template-rows: 165px 50px;
+  grid-template-columns: 1fr 100px;
+}
+.page header {
+  grid-area: head;
+  height: 300px;
+  background-color: #f8c7da;
+}
+.page nav {
+  grid-area: nav;
+  background-color: #ecf1fb;
+}
+.page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page footer {
+  grid-area: foot;
+  background-color: #f9bed5;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .mochila-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .container_mochila {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+}
+.page .container_mochila .m1 {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_mochila .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_mochila .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_mochila .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page .page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page .page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page .page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .rinionera-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  font-style: normal;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  padding: 0%;
+}
+.page .container_rinionera {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.page .container_rinionera .r1 {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_rinionera .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_rinionera .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_rinionera .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page .page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page .page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page .page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .neceseres-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  padding: 0px;
+}
+.page .container_neceseres {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.page .container_neceseres .n1 {
+  display: flex;
+  width: 415px;
+  height: 410px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_neceseres .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_neceseres .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_neceseres .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page .page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page .page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page .page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .bolsos-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  padding: 0px;
+}
+.page .container_bolsos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.page .container_bolsos .bs {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_bolsos .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_bolsos .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_bolsos .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page .page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page .page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page .page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .billetera-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  padding: 0px;
+}
+.page .container_billeteras {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.page .container_billeteras .bi {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_billeteras .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_billeteras .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_billeteras .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page .page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page .page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page .page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .cartera-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  padding: 0px;
+}
+.page .container_carteras {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.page .container_carteras .ca {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_carteras .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_carteras .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_carteras .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page .page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page .page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page .page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .funda-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  padding: 0px;
+}
+.page .container_fundas {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.page .container_fundas .fn {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_fundas .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_fundas .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_fundas .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+
+.mate-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.mate-titulo .subtitulo-titulos {
+  padding: 0px;
+}
+
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+
+.container_mate {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.container_mate .bm {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.container_mate .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.container_mate .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+  padding: 8px;
+}
+.container_mate .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page .page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page .page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page .page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .complemento-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  padding: 0px;
+}
+.page .container_complementos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.page .container_complementos .c {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_complementos .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_complementos .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_complementos .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page .page {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+}
+.page .page header {
+  grid-area: head;
+  background-color: #f8c7da;
+}
+.page .page nav {
+  grid-area: nav;
+  height: 65px;
+  background-color: #ecf1fb;
+}
+.page .page main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+}
+.page .menupages {
+  position: absolute;
+  margin-left: 310px;
+}
+.page .sobres-titulo {
+  font-family: "$title";
+  font-size: 50px;
+  letter-spacing: normal;
+}
+.page .subtitulo-titulos {
+  padding: 0px;
+}
+.page .container_sobres {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+}
+.page .container_sobres .s {
+  display: flex;
+  width: 415px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 15%;
+}
+.page .container_sobres .nombre-producto {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "$comun";
+}
+.page .container_sobres .precio-producto {
+  text-align: center;
+  font-size: 18px;
+  font-family: "$comun";
+}
+.page .container_sobres .cuotas-producto {
+  text-align: center;
+  font-family: "$comun";
+}
+
+.page-moda {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.page-moda .sostenible-titulo {
+  font-size: 50px;
+  font-family: "$title";
+  letter-spacing: normal;
+}
+.page-moda .piuma {
+  text-align: center;
+  font-family: "$marca";
+  font-size: 20px;
+}
+.page-moda .subtitulo-moda {
+  font-size: 25px;
+  font-family: "letratitulo2";
+  font-style: italic;
+  text-align: center;
+}
+.page-moda .row-a {
+  display: grid;
+  grid-template-columns: 706px 630px 330px 330px;
+  grid-template-rows: 1fr 1px;
+  row-gap: 32px;
+  column-gap: 130px;
+  align-items: center;
+}
+.page-moda .textomoda {
+  font-size: 23px;
+  font-family: "$comun";
+  text-align: center;
+  text-decoration: none;
+}
+.page-moda .textomoda2 {
+  font-family: "$comun";
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.page-moda .titulomoda,
+.page-moda .titulomoda2 {
+  text-align: center;
+  background-color: #d1f9be;
+  font-weight: bold;
+}
+.page-moda .moda1,
+.page-moda .moda2,
+.page-moda .moda3 {
+  padding: 10px;
+}
+.page-moda .row-b {
+  display: grid;
+  grid-template-columns: 380px 470px 518px 330px;
+  grid-template-rows: 1fr 1px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+/* UBICACION */
+.head-mapa {
+  width: 100%;
+  height: 265px;
+}
+.head-mapa .ubicacion-titulo {
+  font-family: "$title";
+  font-size: 55px;
+  font-weight: 100;
+  letter-spacing: normal;
+}
+.head-mapa .piuma {
+  text-align: center;
+  font-family: "$marca";
+  font-size: 20px;
+}
+
+.mapa {
+  width: 100%;
+  height: 600px;
+  background-color: #ffffff;
+}
+.mapa .mapagoogle {
+  width: 720px;
+  height: 550px;
+  padding: 50px 60px;
+}
+.mapa .textoubi {
+  display: flex;
+  background-color: #fed6e9;
+  width: 600px;
+  height: 410px;
+  margin: -490px 780px;
+  justify-content: right;
+}
+.mapa .textoubi .retiro {
+  font-family: "$comun";
+  font-size: 25px;
+  text-align: justify;
+  padding: 50px;
+}
+.mapa .textoubi .buscar {
+  border-left: 2px solid;
+  padding: 42px;
+  text-align: center;
+  font-family: "$comun";
+  font-size: 20px;
+}
+.mapa .tx-responsive {
+  display: none;
+  text-align: center;
+  width: 100px;
+  height: 200px;
+}
+.mapa .tx-responsive .tx-r {
+  display: none;
+}
+
+.headpages-proceso .proceso-titulo {
+  font-size: 45px;
+  font-family: "letratitulo2";
+  letter-spacing: normal;
+}
+.headpages-proceso .piuma {
+  text-align: center;
+  font-family: "$marca";
+  font-size: 20px;
+}
+
+main .container-proceso {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1325px;
+}
+main .container-proceso .tx-proceso {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: "$comun";
+  align-items: center;
+  width: 800px;
+}
+main .container-proceso .tx-proceso .titulospaso {
+  display: flex;
+  font-weight: bold;
+}
+main .container-proceso .tx-proceso .paso {
+  width: 195px;
+  font-size: 22px;
+  background-color: rgb(246, 174, 230);
+}
+main .container-proceso .videoproceso {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: 350px;
+  padding: 45px;
+}
+
+.footer {
+  height: 210px;
+  background-color: rgba(171, 76, 88, 0.8);
+}
+.footer .formulario {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  color: rgba(248, 167, 167, 0.8);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+
+header .beneficios-titulo {
+  font-size: 45px;
+  font-family: "letratitulo2";
+  letter-spacing: normal;
+}
+header .piuma {
+  text-align: center;
+  font-family: "$marca";
+  font-size: 20px;
+}
+
+.page-beneficio {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../img/fondo.jpeg");
+}
+.page-beneficio .videobeneficios {
+  display: flex;
+  height: 600px;
+  padding: 30px;
+  margin-left: 100px;
+  align-items: stretch;
+}
+.page-beneficio .beneficios-tx {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: 635px;
+  height: 540px;
+  margin-left: 666px;
+  margin-top: -560px;
+  font-family: "$comun";
+  font-size: 20px;
+  align-items: center;
+}
+
+.footer {
+  height: 210px;
+}
+
+.page-cuidado {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head" "nav nav" "main  main" "foot foot";
+}
+.page-cuidado header {
+  grid-area: head;
+  height: 345px;
+  background-color: #f8c7da;
+}
+.page-cuidado nav {
+  grid-area: nav;
+  background-color: #ecf1fb;
+}
+.page-cuidado main {
+  grid-area: main;
+  display: flex;
+  background-color: #fffffb;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page-cuidado .cuidado-titulo {
+  font-size: 45px;
+  font-family: "letratitulo2";
+  letter-spacing: normal;
+}
+.page-cuidado .row2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 420px;
+  row-gap: 49px;
+  column-gap: 49px;
+  padding: 15px;
+}
+.page-cuidado .row2 .col-cuidado {
+  display: flex;
+  padding: 10px;
+}
+.page-cuidado .row2 .tigrid {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "$comun";
+}
+.page-cuidado .row2 .txgrid {
+  font-size: 18px;
+  font-family: "$comun";
+  list-style-type: circle;
+}
+.page-cuidado .row2 .item1 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 3px;
+  border: 1px solid #0f0000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.page-cuidado .row2 .item2 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid #0b0101;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+  justify-self: center;
+}
+.page-cuidado .row2 .item3 {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.page-cuidado .row2 .item4 {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.page-cuidado .row2 .item5 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.page-cuidado .row2 .item6 {
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.page-cuidado footer {
+  grid-area: foot;
+  background-color: #f9bed5;
+}
+
+.pagequiensoy .headpages-1 {
+  width: 100%;
+  height: 282px;
+}
+.pagequiensoy .headpages-1 .presentacion-titulo {
+  font-family: "$title";
+  font-size: 40px;
+  letter-spacing: normal;
+  padding: 20px;
+}
+.pagequiensoy .headpages-1 .piuma {
+  text-align: center;
+  font-family: "$marca";
+  font-size: 20px;
+}
+.pagequiensoy .headpages-1 .nav-item li a {
+  background-color: #f6f6f6 !important;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  font-family: "$comun";
+  font-size: 14px;
+}
+.pagequiensoy .headpages-1 .dropdown-menu a:hover {
+  background-color: rgba(234, 148, 204, 0.9764705882);
+  text-align: center;
+}
+
+.quiensoy {
+  width: 100%;
+  height: 1245px;
+  background-color: #f6eef5;
+}
+.quiensoy .contenedor1 {
+  display: flex;
+  background-color: #fadfeb;
+}
+.quiensoy .contenedor1 .yo {
+  width: 450px;
+  height: 500px;
+  margin-top: 50px;
+}
+.quiensoy .contenedor1 .texto1 {
+  width: 900px;
+  height: 510px;
+  margin-left: 6px;
+  margin-top: 130px;
+  font-size: 20px;
+  padding-left: 23px;
+  font-family: "$comun";
+}
+.quiensoy .contenedor2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: #f1e6eb;
+}
+.quiensoy .contenedor2 .text2 {
+  width: 782px;
+  height: 590px;
+  font-family: "$comun";
+  margin-top: 30px;
+  text-align: justify;
+  font-size: 20px;
+  align-items: center;
+}
+.quiensoy .contenedor2 .emprender {
+  display: flex;
+  margin-bottom: 30px;
+  height: 450px;
+  padding: 20px;
+  margin-right: -50px;
+}
+
+/* ------------------TABLET--------------------- */
+@media only screen and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-family: "letramarca";
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  .subtitulo {
+    text-align: center;
+    font-size: 20px;
+  }
+  .by {
+    text-align: center;
+    font-size: 20px;
+  }
+  /* SECCION DESCUENTOS */
+  .descuentos {
+    display: flex;
+    width: 800px;
+    height: 440px;
+    margin-top: 10px;
+    margin-left: 115px;
+  }
+  .descuentos .imgdescuento {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+  .descuentos .descuento-img {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+  /* SECCION 1 */
+  .seccion1 .contenedoruno {
+    width: 100%;
+    height: 750px;
+    background-color: #fefcfd;
+  }
+  .seccion1 .contenedoruno .caja1 {
+    width: 100%;
+    height: 390px;
+    background-color: rgba(255, 228, 247, 0.9607843137);
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+  }
+  .seccion1 .contenedoruno .caja1 .perfil {
+    height: 400px;
+    padding: 10px;
+  }
+  .seccion1 .contenedoruno .caja1 .hola {
+    border: none;
+    font-size: 30px;
+    padding: 30px 50px;
+  }
+  .seccion1 .contenedoruno .caja1 .presentacion {
+    text-align: center;
+    font-size: 20px;
+    font-family: "$comun";
+  }
+  .seccion1 .contenedoruno .caja2 {
+    display: none;
+  }
+  .seccion1 .contenedoruno .caja2 .imgcaja2 {
+    display: none;
+  }
+  /* SECCION2 */
+  .seccion2 {
+    display: grid;
+  }
+  .seccion2 .disenio {
+    display: flex;
+  }
+  .seccion2 .row {
+    display: grid;
+    grid-template-columns: 202px 232px 235px 230px;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+  }
+  .seccion2 .row .modelo1,
+  .seccion2 .row .modelo2,
+  .seccion2 .row .modelo4,
+  .seccion2 .row .modelo5 {
+    display: grid;
+  }
+  .seccion2 .row .modelo1 {
+    margin-left: -30px;
+  }
+  .seccion2 .row .descripcion {
+    text-align: center;
+    font-family: "$comun";
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 2px;
+  }
+  .seccion2 .row .cuotas {
+    text-align: center;
+    font-family: "$comun";
+  }
+  .seccion2 .row .precio {
+    text-align: center;
+    font-family: "$comun";
+    margin-top: 5px;
+    color: #100000;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  /* SECCION 3 */
+  .seccion3 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  .seccion3 .titulo {
+    text-align: center;
+    font-family: "$comun";
+    text-decoration: overline;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  .seccion3 .contenedorimg {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    height: 800px;
+    flex-wrap: wrap;
+  }
+  .seccion3 .contenedorimg .imgA {
+    margin-right: 50px;
+    width: 300px;
+    height: 350px;
+    border: 2px solid;
+  }
+  .seccion3 .contenedorimg .imgB {
+    margin-right: 5px;
+    width: 300px;
+    height: 350px;
+    border: 2px solid;
+    margin-left: 100px;
+  }
+  .seccion3 .contenedorimg .imgC {
+    margin-right: 80px;
+    width: 300px;
+    height: 350px;
+    border: 2px solid;
+    margin-left: 0px;
+  }
+  .seccion3 .contenedorimg .imgD {
+    margin-left: 50px;
+    width: 300px;
+    height: 350px;
+    border: 2px solid;
+    margin-left: 70px;
+  }
+  /* FOOTER */
+  .footerindex {
+    width: 100%;
+    height: 460px;
+    background-color: #f9bed5;
+  }
+  .footerindex .mf {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    overflow: auto;
+    margin-bottom: 30px;
+  }
+  .footerindex .mf li {
+    width: 180px;
+    display: inline-block;
+  }
+  .footerindex .mf a {
+    text-decoration: none;
+    display: block;
+    font-family: "$comun";
+    font-weight: bold;
+    font-size: 20px;
+    color: #800f2f;
+    border-right: 1px solid;
+  }
+  .footerindex .mf .menufinal li a:hover {
+    background-color: #fee7f0;
+  }
+  .footerindex .copy,
+  .footerindex .copy2 {
+    text-align: center;
+    font-size: 13px;
+  }
+  .footerindex .menumedia {
+    display: flex;
+    justify-content: center;
+  }
+  .footerindex .menumedia li {
+    width: 75px;
+    display: inline-block;
+  }
+  /* UBICACION */
+  .headpages {
+    width: 100%;
+    height: 250px;
+  }
+  .mapa .ubicacion-titulo {
+    font-family: "$title";
+    font-size: 30px;
+    letter-spacing: normal;
+  }
+  .mapa .mapagoogle {
+    width: 600px;
+    height: 520px;
+  }
+  .mapa .textoubi {
+    display: flex;
+    background-color: #fed6e9;
+    width: 415px;
+    height: 330px;
+    margin: -418px 582px;
+    justify-content: right;
+  }
+  .mapa .textoubi .retiro {
+    font-family: "$comun";
+    font-size: 20px;
+    text-align: justify;
+    padding: 15px;
+  }
+  .mapa .textoubi .buscar {
+    border-left: 2px solid;
+    padding: 15px;
+    text-align: center;
+    font-family: "$comun";
+    font-size: 18px;
+  }
+  .mapa .tx-responsive {
+    display: none;
+    text-align: center;
+    width: 100px;
+    height: 200px;
+  }
+  .mapa .tx-responsive .tx-r {
+    display: none;
+  }
+  /* SECCION CONOCEME */
+  .quiensoy {
+    height: 100%;
+    width: 100%;
+    background-color: #fae9f0;
+  }
+  .quiensoy .presentacion-titulo {
+    font-family: "$title";
+    font-size: 40px;
+    letter-spacing: normal;
+    padding: 20px;
+    font-weight: lighter;
+  }
+  .quiensoy .contenedor1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+  }
+  .quiensoy .contenedor1 .yo {
+    height: 450px;
+    margin-top: 100px;
+  }
+  .quiensoy .contenedor1 .texto1 {
+    width: 798px;
+    height: 885px;
+    margin-left: 30px;
+    font-size: 24px;
+    padding-left: 23px;
+  }
+  .quiensoy .contenedor2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .quiensoy .contenedor2 .emprender {
+    display: flex;
+    margin-top: 200px;
+    height: 320px;
+    width: 350px;
+    padding: 0;
+    border: none;
+    margin-left: 30px;
+  }
+  .quiensoy .contenedor2 .text2 {
+    width: 800px;
+    height: 850px;
+    font-family: "$comun";
+    font-size: 24px;
+    margin-left: 75px;
+    border: none;
+    text-align: left;
+  }
+  /* MODA SOSTENIBLE */
+  .page-moda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .page-moda .sostenible-titulo {
+    font-size: 40px;
+    font-family: "$title";
+    font-weight: lighter;
+    letter-spacing: normal;
+  }
+  .page-moda .subtitulo-moda {
+    font-size: 20px;
+    font-family: "$title";
+    font-style: italic;
+    text-align: center;
+  }
+  .page-moda .row-a {
+    display: grid;
+    grid-template-columns: 400px 455px 332px 309px;
+    grid-template-rows: 1fr 1px;
+    column-gap: 146px;
+    align-items: stretch;
+  }
+  .page-moda .textomoda {
+    padding: 30px;
+    font-size: 18px;
+    font-family: "$comun";
+    text-align: center;
+  }
+  .page-moda .textomoda2 {
+    font-family: "$comun";
+    font-size: 18px;
+    text-align: justify;
+  }
+  .page-moda .titulomoda, .page-moda .titulomoda2 {
+    text-align: center;
+    background-color: #d1f9be;
+  }
+  .page-moda .moda1,
+  .page-moda .moda2,
+  .page-moda .moda3 {
+    display: flex;
+    padding: 10px;
+  }
+  .page-moda .moda1 {
+    width: 530px;
+    height: 530px;
+    padding: 30px;
+  }
+  .page-moda .moda2,
+  .page-moda .moda3 {
+    width: 300px;
+    height: 300px;
+  }
+  .page-moda .row-b {
+    display: grid;
+    grid-template-columns: 260px 319px 380px 330px;
+    grid-template-rows: 1fr 1px;
+    row-gap: 19px;
+    column-gap: 8px;
+    align-items: stretch;
+  }
+  /* BENEFICIOS */
+  header .beneficios-titulo {
+    font-size: 35px;
+    font-family: "$title";
+    font-weight: lighter;
+  }
+  .page-beneficio {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./../img/fondo.jpeg");
+  }
+  .page-beneficio .videobeneficios {
+    display: flex;
+    height: 910px;
+    padding: 225px;
+    margin-left: -260px;
+    margin-top: -148px;
+    align-items: stretch;
+  }
+  .page-beneficio .beneficios-tx {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 423px;
+    height: 680px;
+    margin-left: 509px;
+    margin-top: -740px;
+    align-items: stretch;
+    font-family: "$comun";
+    font-size: 20px;
+  }
+  /* SECCION PROCESO CREATIVO */
+  .proceso-titulo {
+    font-family: "$title";
+    font-weight: lighter;
+  }
+  main .container-proceso {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1010px;
+  }
+  main .container-proceso .tx-proceso {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: "$comun";
+    align-items: center;
+    width: 800px;
+  }
+  main .container-proceso .tx-proceso .titulospaso {
+    display: flex;
+    font-weight: bold;
+  }
+  main .container-proceso .tx-proceso .paso {
+    width: 195px;
+    font-size: 18px;
+    background-color: rgb(246, 174, 230);
+  }
+  main .container-proceso .videoproceso {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    height: 350px;
+    padding: 45px;
+  }
+}
+/* -----------MOBILE------------ */
+@media only screen and (max-width: 420px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    width: 100%;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+  header .banner {
+    background-color: rgba(147, 5, 24, 0.537254902);
+    font-size: 12px;
+  }
+  header .nav-item-icono {
+    background-color: #f8c7da;
+    width: 50px;
+    height: 50px;
+  }
+  header h1 {
+    font-family: "$marca";
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+  }
+  header .subtitulo {
+    text-align: center;
+    font-size: 15px;
+  }
+  header .by {
+    text-align: center;
+    font-size: 15px;
+  }
+  header .navbar-nav .nav-link.active {
+    font-family: "$comun";
+  }
+  header .dropdown-toggle {
+    font-family: "$comun";
+  }
+  .descuentos {
+    width: 100%;
+    height: 300px;
+    margin-left: 1px;
+  }
+  .descuentos .imgdescuento {
+    width: 100%;
+    height: 350px;
+  }
+  .descuentos .descuento-img {
+    width: 100%;
+    height: 250px;
+  }
+  /* SECCION 1 */
+  .contenedoruno {
+    height: 100%;
+    width: 100%;
+    background-color: #fefcfd;
+  }
+  .contenedoruno .caja1 {
+    display: flex;
+    width: 100%;
+    height: 385px;
+    background-color: #ffeffa;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  .contenedoruno .perfil {
+    height: 330px;
+    width: 280px;
+    margin-right: -2px;
+  }
+  .contenedoruno a {
+    font-family: "$title";
+    font-style: normal;
+    text-decoration: none;
+    background-color: #fefbff;
+  }
+  .contenedoruno .presentacion {
+    height: 100%;
+    font-size: 20px;
+    font-family: "$comun";
+    background-color: rgb(255, 255, 255);
+  }
+  .contenedoruno .hola {
+    border-right: none;
+    text-align: center;
+    height: 215px;
+    font-size: 30px;
+    width: 260px;
+  }
+  .caja2 {
+    display: none;
+  }
+  .caja2 .imgcaja2 {
+    display: none;
+  }
+  /* SECCION2 */
+  .seccion2 {
+    background-color: #f9e1ef;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    margin-top: 290px;
+  }
+  .seccion2 .disenio {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-family: "$comun";
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+  .seccion2 .row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .seccion2 .row .modelo1,
+  .seccion2 .row .modelo2,
+  .seccion2 .row .modelo3,
+  .seccion2 .row .modelo4,
+  .seccion2 .row .modelo5 {
+    margin-left: 100px;
+  }
+  .seccion2 .row .modelo1 .img1,
+  .seccion2 .row .modelo1 .img2,
+  .seccion2 .row .modelo1 .img3,
+  .seccion2 .row .modelo1 .img4,
+  .seccion2 .row .modelo1 .img5,
+  .seccion2 .row .modelo2 .img1,
+  .seccion2 .row .modelo2 .img2,
+  .seccion2 .row .modelo2 .img3,
+  .seccion2 .row .modelo2 .img4,
+  .seccion2 .row .modelo2 .img5,
+  .seccion2 .row .modelo3 .img1,
+  .seccion2 .row .modelo3 .img2,
+  .seccion2 .row .modelo3 .img3,
+  .seccion2 .row .modelo3 .img4,
+  .seccion2 .row .modelo3 .img5,
+  .seccion2 .row .modelo4 .img1,
+  .seccion2 .row .modelo4 .img2,
+  .seccion2 .row .modelo4 .img3,
+  .seccion2 .row .modelo4 .img4,
+  .seccion2 .row .modelo4 .img5,
+  .seccion2 .row .modelo5 .img1,
+  .seccion2 .row .modelo5 .img2,
+  .seccion2 .row .modelo5 .img3,
+  .seccion2 .row .modelo5 .img4,
+  .seccion2 .row .modelo5 .img5 {
+    width: 200px;
+    height: 200px;
+  }
+  .seccion2 .row .seccion-2 {
+    display: inline-flex;
+    flex-direction: column;
+    width: 215px;
+    height: 155px;
+    align-items: stretch;
+    margin-top: -85px;
+  }
+  .seccion2 .row .seccion-2 .descripcion {
+    text-align: center;
+    font-family: "$comun";
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2px 2px;
+  }
+  .seccion2 .row .seccion-2 .cuotas {
+    text-align: center;
+    font-family: "$comun";
+  }
+  .seccion2 .row .seccion-2 .precio {
+    text-align: center;
+    font-family: "$comun";
+    margin-top: 5px;
+    color: #100000;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  /* SECCION 3 */
+  .seccion3 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+  .seccion3 .titulo {
+    text-align: center;
+    font-family: "$comun";
+    text-decoration: overline;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .seccion3 .contenedorimg {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 265px;
+    height: 1059px;
+    padding: 14px 94px;
+    justify-items: end;
+    margin-top: 24px;
+    align-items: center;
+    align-content: center;
+  }
+  .seccion3 .contenedorimg .imgA,
+  .seccion3 .contenedorimg .imgB,
+  .seccion3 .contenedorimg .imgC,
+  .seccion3 .contenedorimg .imgD {
+    display: flex;
+    width: 210px;
+    height: 230px;
+    margin-right: 90px;
+  }
+  /* FOOTER */
+  .footerindex {
+    width: 100%;
+    height: 615px;
+    background-color: #f9bed5;
+  }
+  .footerindex .formulario {
+    padding: 0px;
+    margin: 0px;
+  }
+  .footerindex .formulario p {
+    color: #800f2f;
+    font-weight: bold;
+    padding: 30px;
+  }
+  .footerindex .formulario input[type=submit i] {
+    background-color: rgba(243, 34, 93, 0.5176470588);
+    width: 94px;
+    height: 55px;
+    font-weight: bold;
+  }
+  .footerindex .formulario textarea {
+    width: 200px;
+    height: 70px;
+  }
+  .footerindex .mf {
+    background-color: #f9bed5;
+    list-style: none;
+    padding: 35px;
+    margin: 0;
+    text-align: center;
+    overflow: auto;
+  }
+  .footerindex .mf li {
+    width: 180px;
+    display: inline-block;
+  }
+  .footerindex .mf .menufinal .menufinal li a:hover {
+    background-color: #f9bed5;
+  }
+  .footerindex .copy,
+  .footerindex .copy2 {
+    text-align: center;
+    font-size: 10px;
+  }
+  /* INDEX CUIDADOS */
+  .navbar navbar-expand-lg bg-body-tertiary {
+    margin-bottom: 20px;
+  }
+  .headpages {
+    height: 250px;
+    width: 100%;
+  }
+  .page-cuidado {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head head" "nav nav" "main  main" "foot foot";
+  }
+  .page-cuidado header {
+    grid-area: head;
+    height: 345px;
+    background-color: #f8c7da;
+  }
+  .page-cuidado nav {
+    grid-area: nav;
+    background-color: #ecf1fb;
+  }
+  .page-cuidado main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .page-cuidado .cuidado-titulo {
+    font-family: "$title";
+    letter-spacing: normal;
+    font-weight: lighter;
+    font-size: 33px;
+  }
+  .page-cuidado .row2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 420px;
+  }
+  .page-cuidado .row2 .txgrid {
+    font-size: 18px;
+    font-family: "$comun";
+    list-style-type: circle;
+  }
+  .page-cuidado .row2 .tigrid {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "$comun";
+  }
+  .page-cuidado .row2 .item1 {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .page-cuidado .row2 .item2, .page-cuidado .row2 .item3, .page-cuidado .row2 .item4, .page-cuidado .row2 .item5, .page-cuidado .row2 .item6 {
+    border-radius: 10px;
+    text-align: center;
+  }
+  /* BENEFICIOS */
+  .headpages-beneficios {
+    width: 100%;
+    height: 250px;
+  }
+  .headpages-beneficios .beneficios-titulo {
+    font-size: 30px;
+    letter-spacing: normal;
+    font-family: "$title";
+  }
+  .page-beneficio {
+    width: 100%;
+    background-image: none;
+    background-color: #fee7f0;
+  }
+  .page-beneficio .videobeneficios {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+  .page-beneficio .beneficios-tx {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 314px;
+    height: 877px;
+    margin-left: 49px;
+    margin-top: -193px;
+    align-items: center;
+    font-family: "$comun";
+    font-size: 20px;
+  }
+  /* SECCION PROCESO CREATIVO */
+  .headpages-proceso .proceso-titulo {
+    font-size: 35px;
+    font-family: "$title";
+    letter-spacing: normal;
+  }
+  main .container-proceso {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 390px;
+    flex-wrap: wrap;
+  }
+  main .container-proceso .tx-proceso {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "$comun";
+    align-items: center;
+    width: 400px;
+  }
+  main .container-proceso .tx-proceso .titulospaso {
+    display: flex;
+    font-weight: bold;
+  }
+  main .container-proceso .tx-proceso .paso {
+    width: 195px;
+    font-size: 22px;
+    background-color: rgb(246, 174, 230);
+  }
+  main .container-proceso .videoproceso {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 405px;
+    height: 630px;
+  }
+  /* MODA SOSTENIBLE */
+  .page-moda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .page-moda .sostenible-titulo {
+    font-size: 35px;
+  }
+  .page-moda .subtitulo-moda {
+    font-size: 18px;
+  }
+  .page-moda .row-a {
+    display: grid;
+    grid-template-columns: 8px 390px;
+    grid-template-rows: 1fr 1px;
+    column-gap: 3px;
+  }
+  .page-moda .textomoda {
+    padding: 30px;
+    font-size: 20px;
+    font-family: "$comun";
+    text-align: center;
+    margin-top: 275px;
+  }
+  .page-moda .textomoda2 {
+    font-family: "$comun";
+    font-size: 18px;
+    margin-top: 230px;
+    margin-left: -230px;
+    text-align: center;
+  }
+  .page-moda .titulomoda {
+    text-align: center;
+    background-color: #d1f9be;
+  }
+  .page-moda .titulomoda2 {
+    text-align: center;
+    background-color: #d1f9be;
+  }
+  .page-moda .moda1,
+  .page-moda .moda2,
+  .page-moda .moda3 {
+    display: flex;
+    padding: 10px;
+  }
+  .page-moda .moda1 {
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+  }
+  .page-moda .moda2,
+  .page-moda .moda3 {
+    width: 200px;
+    height: 200px;
+  }
+  .page-moda .row-b {
+    display: grid;
+    grid-template-columns: 220px 5px 150px 330px;
+    grid-template-rows: 1fr 1px;
+    row-gap: 4px;
+    column-gap: 9px;
+    align-items: stretch;
+  }
+  /* SECCION CONOCEME */
+  .pagequiensoy .headpages-1 {
+    width: 100%;
+    height: 100%;
+  }
+  .pagequiensoy .headpages-1 .presentacion-titulo {
+    font-family: "$title";
+    font-size: 30px;
+    letter-spacing: normal;
+    padding: 5px;
+  }
+  .quiensoy {
+    height: 100%;
+    width: 100%;
+    background-color: #fae9f0;
+  }
+  .quiensoy .contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .quiensoy .contenedor1 .yo {
+    width: 300px;
+    height: 350px;
+    margin-top: 20px;
+  }
+  .quiensoy .contenedor1 .texto1 {
+    width: 100%;
+    margin-top: 33px;
+    font-size: 20px;
+    border-left: none;
+    font-family: "$comun";
+    height: 1040px;
+    text-align: center;
+    margin-right: 40px;
+  }
+  .quiensoy .contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    text-align: center;
+    height: 1120px;
+  }
+  .quiensoy .contenedor2 .text2 {
+    width: 800px;
+    height: 600px;
+    font-family: "$comun";
+    font-size: 19px;
+    margin-right: 20px;
+    border: none;
+    margin-bottom: 60px;
+    margin-right: 55px;
+  }
+  .quiensoy .contenedor2 .emprender {
+    display: none;
+  }
+  /* UBICACION */
+  .head-mapa {
+    width: 100%;
+    height: 100%;
+  }
+  .head-mapa .ubicacion-titulo {
+    font-family: "$title";
+    font-size: 35px;
+    letter-spacing: normal;
+  }
+  .mapa {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(250, 234, 234);
+  }
+  .mapa .mapagoogle {
+    width: 415px;
+    height: 350px;
+    padding: 17px 27px;
+    margin-top: 50px;
+  }
+  .mapa .textoubi, .mapa .buscar, .mapa .retiro {
+    display: none;
+  }
+  .mapa .tx-responsive {
+    display: flex;
+    background-color: #f893d6;
+    width: 300px;
+    height: 130px;
+    margin-left: 65px;
+    padding: 20px;
+    border-style: double;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .mapa .tx-responsive .tx-r {
+    display: inline;
+    text-align: center;
+    font-family: "$comun";
+  }
+  /* SECCION BANDOLERA */
+  .page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head head" "nav nav" "main  main" "foot foot";
+    grid-template-rows: 180px 30px;
+    grid-template-columns: 1fr 100px;
+  }
+  .page header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+  .page nav {
+    grid-area: nav;
+    background-color: #ecf1fb;
+  }
+  .page nav .container-fluid {
+    background-color: #ffffff;
+  }
+  .page main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .page .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .page footer {
+    grid-area: foot;
+    background-color: #f9bed5;
+  }
+  .page .piuma {
+    text-align: center;
+    font-family: "$marca";
+    font-size: 18px;
+  }
+  .page .bandolera-titulo {
+    font-family: "$title";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .page .subtitulo-titulos {
+    font-family: "fuentetitulos";
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-style: oblique;
+  }
+  .page .container_bandolera {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .page .container_bandolera .b1 {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 40px 60px;
+    border-radius: 15%;
+  }
+  .page .container_bandolera .nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "$comun";
+  }
+  .page .container_bandolera .precio-producto {
+    text-align: center;
+    font-size: 18px;
+    font-family: "$comun";
+  }
+  .page .container_bandolera .cuotas-producto {
+    text-align: center;
+    font-family: "$comun";
+  }
+  /* MOCHILAS */
+  .page .page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+    grid-template-rows: 232px 49px;
+    grid-template-columns: 1fr 200px;
+  }
+  .page header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .page nav {
+    grid-area: nav;
+    height: 67px;
+    background-color: #f1e4f3;
+  }
+  .page main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .page .mochila-titulo {
+    font-family: "$title";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .page .container_mochila {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .page .container_mochila .m1 {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 40px 60px;
+  }
+  .page .container_mochila .m1 .nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "$comun";
+    padding: 10px;
+  }
+  .page .container_mochila .m1 .precio-producto {
+    text-align: center;
+    font-size: 18px;
+    font-family: "$comun";
+    padding: 8px;
+  }
+  .page .container_mochila .m1 .cuotas-producto {
+    text-align: center;
+    font-family: "$comun";
+  }
+  /* SECCION RIÑONERA */
+  .page .page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+    grid-template-rows: 270px 60px;
+    grid-template-columns: 100px;
+  }
+  .page .page header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+  .page .page nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #ecf1fb;
+  }
+  .page .page main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .page .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .page .rinionera-titulo {
+    font-family: "$title";
+    font-size: 35px;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+  .page .subtitulo-titulos {
+    padding: 0%;
+  }
+  .page .container_rinionera {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f8e9f2;
+  }
+  .page .container_rinionera .r1 {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .page .container_rinionera .nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "$comun";
+  }
+  .page .container_rinionera .precio-producto {
+    text-align: center;
+    font-size: 18px;
+    font-family: "$comun";
+  }
+  .page .container_rinionera .cuotas-producto {
+    text-align: center;
+    font-family: "$comun";
+  }
+  /* NECESERES*/
+  .page .page header {
+    grid-area: head;
+    height: 100%;
+    background-color: #f8c7da;
+  }
+  .page .page nav {
+    grid-area: nav;
+    height: 67px;
+    background-color: #ecf1fb;
+  }
+  .page .page main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .page .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .page .neceseres-titulo {
+    font-family: "$title";
+    font-size: 35px;
+    letter-spacing: normal;
+  }
+  .page .subtitulo-titulos {
+    padding: 0px;
+  }
+  .page .container_neceseres .nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "$comun";
+  }
+  .page .container_neceseres .precio-producto {
+    text-align: center;
+    font-size: 18px;
+    font-family: "$comun";
+  }
+  .page .container_neceseres .cuotas-producto {
+    text-align: center;
+    font-family: "$comun";
+  }
+  /* BOLSOS */
+  .page header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .page header nav {
+    grid-area: nav;
+    height: 65px;
+    background-color: #ecf1fb;
+  }
+  .page header main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .page header .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .page header .bolsos-titulo {
+    font-family: "$title";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .page header .subtitulo-titulos {
+    padding: 0px;
+  }
+  /* SECCION BILLETERAS */
+  .page header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .page nav {
+    grid-area: nav;
+    height: 65px;
+    background-color: #ecf1fb;
+  }
+  .page main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .page .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .page .billetera-titulo {
+    font-family: "$title";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .page .subtitulo-titulos {
+    padding: 0px;
+  }
+  .page .bi {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  /* SECCION COMPLEMENTOS */
+  .pages header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .pages nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #ecf1fb;
+  }
+  .pages main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .pages .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .pages .complementos-titulo {
+    font-family: "$title";
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .pages .subtitulo-titulos {
+    padding: 0px;
+  }
+  .pages .c {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  /* BOLSOS MATEROS */
+  .mate-titulo {
+    font-family: "$title";
+    font-size: 35px;
+    letter-spacing: normal;
+  }
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+  .pages .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .pages header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .pages nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #ecf1fb;
+  }
+  .pages main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .pages .bm {
+    display: flex;
+    width: 415px;
+    height: 400px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  /* SOBRES */
+  .page header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .page nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #ecf1fb;
+  }
+  .page main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .sobres-titulo {
+    font-family: "$title";
+    font-size: 35px;
+    letter-spacing: normal;
+  }
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+  .s {
+    display: flex;
+    width: 420px;
+    height: 380px;
+    padding: 40px 50px;
+    border-radius: 15%;
+  }
+  .s .nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "$comun";
+  }
+  .s .precio-producto {
+    text-align: center;
+    font-size: 18px;
+    font-family: "$comun";
+  }
+  .s .cuotas-producto {
+    text-align: center;
+    font-family: "$comun";
+  }
+  /* SECCION FUNDAS NOTEBOOKS */
+  .page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head head" "nav nav" "main main" "foot foot";
+    grid-template-rows: 270px 60px;
+    grid-template-columns: 100px;
+  }
+  .page header {
+    grid-area: head;
+    background-color: #f8c7da;
+  }
+  .page nav {
+    grid-area: nav;
+    height: 100%;
+    background-color: #ecf1fb;
+  }
+  .page main {
+    grid-area: main;
+    display: flex;
+    background-color: #fffffb;
+  }
+  .page .menupages {
+    position: absolute;
+    margin-left: 310px;
+  }
+  .page .funda-titulo {
+    font-family: "$title";
+    font-size: 35px;
+    letter-spacing: normal;
+  }
+  .page .subtitulo-titulos {
+    padding: 0px;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

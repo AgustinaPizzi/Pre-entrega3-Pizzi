@@ -1,0 +1,62 @@
+
+.page-moda {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    .sostenible-titulo {
+        font-size: $titulo-paginas;
+        font-family: "$title";
+        letter-spacing: normal;
+     }
+      .piuma{
+        text-align: center;
+        font-family: "$marca";
+        font-size: $marca-paginas;
+      }
+      .subtitulo-moda {
+        font-size: $subtitulo-paginas;
+        font-family: "letratitulo2";
+        font-style: italic;
+        text-align: center;
+      }
+      .row-a {
+        display: grid;
+        grid-template-columns: 706px 630px 330px 330px;
+        grid-template-rows: 1fr 1px;
+        row-gap: 32px;
+        column-gap: 130px;
+        align-items: center;
+      }
+      .textomoda {
+        font-size: 23px;
+        font-family: "$comun";
+        text-align: center;
+        text-decoration: none;
+      }
+      .textomoda2 {
+        font-family: "$comun";
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+      
+      .titulomoda,
+      .titulomoda2 {
+        text-align: center;
+        background-color: $green;
+        font-weight: bold;
+      }
+      .moda1,
+      .moda2,
+      .moda3 {
+        padding: 10px;
+      }
+      .row-b {
+        display: grid;
+        grid-template-columns: 380px 470px 518px 330px;
+        grid-template-rows: 1fr 1px;
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+  }
+ 

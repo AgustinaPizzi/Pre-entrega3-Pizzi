@@ -33,8 +33,7 @@
             .img2,
             .img4,
             .img5 {
-              height: $ancho-seccion2;
-              width: $alto-seccion2;
+            @include ancho-alto(250px,250px);
               border-radius: 5px;
               border: 1px solid;
             } 

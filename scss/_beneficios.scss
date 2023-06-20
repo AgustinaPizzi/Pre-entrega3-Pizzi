@@ -1,0 +1,39 @@
+header{
+    .beneficios-titulo {
+        font-size: 45px;
+        font-family: "letratitulo2";
+        letter-spacing: normal;
+      }
+      .piuma{
+        text-align: center;
+        font-family: "$marca";
+        font-size: $marca-paginas;
+    }
+}
+
+.page-beneficio {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./../img/fondo.jpeg");
+    .videobeneficios {
+        display: flex;
+        height: 600px;
+        padding: 30px;
+        margin-left: 100px;
+        align-items: stretch;
+      }
+      .beneficios-tx {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        @include ancho-alto(635px,540px);
+        margin-left: 666px;
+        margin-top: -560px;
+        font-family: "$comun";
+        font-size: 20px;
+        align-items: center;
+      }
+    }
+.footer {
+    height: 210px;
+  }

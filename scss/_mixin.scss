@@ -2,11 +2,16 @@
     width: $width;
     height: $height;
 }
-@mixin alineacion-tamanio ($text-align, $font-size){
-    text-align: $text-align;
-    font-size: $font-size;
+@mixin pa-ma ($padding, $margin){
+    padding: $padding;
+    margin: $margin;
 }
 @mixin menupag ($position, $margin-left){
     position: $position;
     margin-left: $margin-left;
 }
+@mixin displey-flex ($flex, $column){
+    display: $flex;
+    flex-direction: $column;
+}
+

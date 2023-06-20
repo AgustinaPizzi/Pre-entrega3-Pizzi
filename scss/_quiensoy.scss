@@ -1,0 +1,81 @@
+.pagequiensoy{
+    .headpages-1 {
+        @include ancho-alto(100%,282px);
+        .presentacion-titulo {
+            font-family: "$title";
+            font-size: 40px;
+            letter-spacing: normal;
+            padding: 20px;
+        }
+          .piuma{
+            text-align: center;
+            font-family: "$marca";
+            font-size: $marca-paginas;
+        }
+        .nav-item li a {
+            background-color: #f6f6f6 !important;
+            color: black;
+            text-decoration: none;
+            padding: 8px;
+            font-family: "$comun";
+            font-size: 14px;
+          }
+          .dropdown-menu a:hover {
+            background-color: $color-menuppal;
+            text-align: center;
+        }
+     }
+}
+.quiensoy {
+    @include ancho-alto(100%,1245px);
+    background-color: #f6eef5;
+    .contenedor1 {
+        display: flex;
+        background-color: #fadfeb;
+        .yo {
+            @include ancho-alto(450px,500px);
+            margin-top: 50px;
+        }
+        .texto1 {
+            @include ancho-alto(900px,510px);
+            margin-left: 6px;
+            margin-top: 130px;
+            font-size: 20px;
+            padding-left: 23px;
+            font-family: "$comun";
+          }
+    }
+    .contenedor2 {
+        @include displey-flex(flex,row);
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        background-color: #f1e6eb;
+        .text2 {
+            @include ancho-alto(782px,590px);
+            font-family: "$comun";
+            margin-top: 30px;
+            text-align: justify;
+            font-size: 20px;
+            align-items: center;
+        }
+        .emprender {
+            display: flex;
+            margin-bottom: 30px;
+            height: 450px;
+            padding: 20px;
+            margin-right: -50px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

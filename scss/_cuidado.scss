@@ -1,0 +1,106 @@
+.page-cuidado {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main  main"
+      "foot foot";
+    header {
+        grid-area: head;
+        height: 345px;
+        background-color: $color-head;
+    }
+    nav {
+    grid-area: nav;
+    background-color: $color-nav;
+    }
+    main {
+    grid-area: main;
+    display: flex;
+    background-color: $color-main;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .cuidado-titulo {
+    font-size: 45px;
+    font-family: "letratitulo2";
+    letter-spacing: normal;
+    }
+    .row2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 420px;
+    row-gap: 49px;
+    column-gap: 49px;
+    padding: 15px;
+    .col-cuidado {
+        display: flex;
+        padding: 10px; 
+    }
+    .tigrid {
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: "$comun";
+        }
+    .txgrid {
+            font-size: 18px;
+            font-family: "$comun";
+            list-style-type: circle;
+        }
+        .item1 {
+           @include displey-flex(flex, column);
+            padding: 30px 3px;
+            border: 1px solid #0f0000;
+            border-radius: 10px;
+            text-align: center;
+            background-color: $yellow;
+          }
+          .item2 {
+            @include displey-flex(flex, column);
+            padding: 30px;
+            border: 1px solid #0b0101;
+            border-radius: 10px;
+            text-align: center;
+            background-color: $yellow;
+            justify-self: center;
+          }
+          .item3 {
+            @include displey-flex(flex, column);
+            padding: 5px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            text-align: center;
+            background-color: $yellow;
+          }
+          .item4 {
+            @include displey-flex(flex, column);
+            padding: 5px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            text-align: center;
+            background-color: $yellow;
+          }
+          .item5 {
+            @include displey-flex(flex, column);
+            padding: 20px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            text-align: center;
+            background-color: $yellow;
+          }
+          .item6 {
+            @include displey-flex(flex, column);
+            padding: 27px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            text-align: center;
+            background-color: $yellow;
+          }
+    }
+footer {
+    grid-area: foot;
+    background-color: $color-foot;
+  }
+}

@@ -4,14 +4,15 @@
   }
   
   @font-face {
-    font-family: "$titulo2";
+    font-family: "$letratitulo2";
     src: url(./../fonts/letratitulo2.ttf);
   }
-  @font-face {
-    font-family: "$titulo";
-    src: url(./../fonts/titulos.ttf);
-  }
+ 
   @font-face {
     font-family: "$comun";
     src: url(./../fonts/menus.ttf);
+  }
+  @font-face {
+    font-family: "$title";
+    src: url(./../fonts/PlayfairDisplay-VariableFont_wght.ttf);
   }

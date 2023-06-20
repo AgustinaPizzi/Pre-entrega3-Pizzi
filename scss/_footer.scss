@@ -1,44 +1,66 @@
-footer{
-    .footerindex{
-        height:400px ;
-        width: 100%;
-        background-color: $color-foot;
-        .formulario{
-            padding:0px;
-            margin:0px;
-
-            .p{
-                color: $color-tx-foot;
-                font-weight: bold;
-                padding: 10px;
-            }
-            .textarea{
-                @include ancho-alto(200px,50px)
-            }
-        }
-        .menufinal{
-            list-style: none;
-            padding: 20px;
-            margin: 0;
-            line-height: 30px;
-            text-align: center;
-            overflow: auto;
-            margin-bottom: 10px;
-            li{
-                width: 180px;
-                display: inline-block;
-            }
-            a{
-                text-decoration: none;
-                 display: block;
-                font-family: "menus";
-                font-weight: bold;
-                font-size: 20px;
-                color: #800f2f;
-                border-right: 1px solid;  
-            }
-        }
-
-    
+.footerindex {
+    @include ancho-alto(100%,450px);
+    background-color: $color-foot;
+    .formulario {
+        font-size: 20px;
+        text-align: center;
+        padding: 20px 10px;
+        color: rgba(248, 167, 167, 0.8);
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 3px;
+      }
+       p {
+        color:$color-tx-foot;
+        font-weight: bold;
+        padding: 10px;
     }
+      textarea {
+       @include ancho-alto(200px,50px);
+      }
+      .menufinal {
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+        line-height: 30px;
+        text-align: center;
+        overflow: auto;
+        margin-bottom: 10px;
+
+        li{
+            width: 180px;
+            display: inline-block;
+        }
+        
+       a{
+        text-decoration: none;
+        display: block;
+        font-family: "$comun";
+        font-weight: bold;
+        font-size: 20px;
+        color:$color-tx-foot;
+        border-right: 1px solid;
+      }
+      li a:hover {
+        background-color: $color-menufoot;
+      }
+    }
+    .copy,
+    .copy2 {
+      font-family: "$comun";
+      text-align: center;
+      font-size: 13px;
+      color: black;
+      font-weight: lighter;
+    }
+    .menumedia {
+    display: flex;
+    justify-content: center;
+
+    li {
+        width: 60px;
+        display: inline-block;
+    }
+  }
 }
+  
+ 

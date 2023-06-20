@@ -1,0 +1,55 @@
+
+/* UBICACION */
+.head-mapa {
+    @include ancho-alto(100%,265px);
+    .ubicacion-titulo {
+        font-family: "$title";
+        font-size: 55px;
+        font-weight:100;
+        letter-spacing: normal;
+      } 
+      .piuma{
+        text-align: center;
+        font-family: "$marca";
+        font-size: $marca-paginas;
+    } 
+}
+  .mapa {
+    @include ancho-alto(100%,600px);
+    background-color: $blanco;
+    .mapagoogle {
+        @include ancho-alto(720px,550px);
+        padding: 50px 60px;
+    }
+   .textoubi {
+        display: flex;
+        background-color: $ubi;
+        @include ancho-alto(600px,410px);
+        margin: -490px 780px;
+        justify-content: right;
+        .retiro {
+            font-family: "$comun";
+            font-size: 25px;
+            text-align: justify;
+            padding: 50px;
+         }
+        .buscar {
+            border-left: 2px solid;
+            padding: 42px;
+            text-align: center;
+            font-family: "$comun";
+            font-size: 20px;
+        }
+    }
+    .tx-responsive {
+        display: none;
+        text-align: center;
+        @include ancho-alto(100px,200px);
+       .tx-r {
+            display: none;
+          }
+      }
+  }
+
+  
+ 

@@ -11,16 +11,16 @@
         grid-template-rows: 110px 30px;
         grid-template-columns: 1fr 100px;
       }
-      .page > header {
+      header {
         grid-area: head;
         height: 300px;
         background-color:$color-head;
       }
-      .page > nav {
+      nav {
         grid-area: nav;
         background-color: $color-nav;
       }
-      .page > main {
+      main {
         grid-area: main;
         display: flex;
         background-color:$color-main;
@@ -34,13 +34,12 @@
         font-size: $marca-paginas;
     }
      .bandolera-titulo {
-       font-family: "$titulo";
+       font-family: "$title";
        font-size: $titulo-paginas;
        letter-spacing: normal;
-     
     }
       .subtitulo-titulos {
-        font-family: "$titulo";
+        font-family: "$comun";
         font-size: $subtitulo-paginas;
         text-align: center;
         padding: 20px;
@@ -89,21 +88,21 @@
        grid-template-rows: 165px 50px;
        grid-template-columns: 1fr 100px;
     }
-    .page > header {
+    header {
       grid-area: head;
       height: 300px;
       background-color: $color-head;
     }
-    .page > nav {
+    nav {
       grid-area: nav;
       background-color: $color-nav;
     }
-    .page > main {
+    main {
       grid-area: main;
       display: flex;
       background-color: $color-main;
     }
-    .page > footer {
+    footer {
       grid-area: foot;
       background-color: $color-foot;
     }
@@ -111,7 +110,7 @@
     @include menupag(absolute,310px);
     }
     .mochila-titulo {
-      font-family: "$titulo";
+      font-family: "$title";
       font-size: $titulo-paginas;
       letter-spacing: normal;
     }
@@ -128,17 +127,17 @@
         padding: 40px 50px;
         border-radius: 15%;
       }
-        .nombre-producto{
+      .nombre-producto{
         font-size: $name-producto;
         font-weight: bold;
         text-align: center;
         font-family: "$comun";
-    }
-        .precio-producto{
+      }
+      .precio-producto{
         text-align: center;
         font-size: $precio-producto;
         font-family: "$comun";
-    }
+      }
       .cuotas-producto{
         text-align: center;
         font-family: "$comun";
@@ -163,13 +162,11 @@
          grid-area: head;
          background-color:$color-head;
         }
-        
         nav {
          grid-area: nav;
          height: 65px;
          background-color: $color-nav;
         }
-    
         main {
          grid-area: main;
          display: flex;
@@ -179,16 +176,16 @@
       .menupages {
         @include menupag(absolute,310px);
   }
-      .rinionera-titulo {
-      font-family: "$titulo";
+    .rinionera-titulo {
+      font-family: "$title";
       font-size: $titulo-paginas;
       font-style: normal;
       letter-spacing: normal;
      }
-      .subtitulo-titulos {
+    .subtitulo-titulos {
       padding: 0%;
       }
-      .container_rinionera {
+    .container_rinionera {
       display: flex;
       flex-wrap: wrap;
       align-content: stretch;
@@ -249,7 +246,7 @@
          @include menupag(absolute,310px);
         }
         .neceseres-titulo {
-          font-family: "$titulo2";
+          font-family: "$title";
           font-size: $titulo-paginas;
           letter-spacing: normal;
         }
@@ -318,7 +315,7 @@
        @include menupag(absolute,310px)
       }
       .bolsos-titulo {
-        font-family: "$comun";
+        font-family: "$title";
         font-size: $titulo-paginas;
         letter-spacing: normal;
       }
@@ -385,9 +382,8 @@
   .menupages {
   @include menupag(absolute,310px);
   }
-  
-  .billetera-titulo {
-    font-family: "menu";
+   .billetera-titulo {
+    font-family: "$title";
     font-size: $titulo-paginas;
     letter-spacing: normal;
   }
@@ -454,9 +450,8 @@
 .menupages {
 @include menupag(absolute,310px);
 }
-
 .cartera-titulo {
-  font-family: "menu";
+  font-family: "$title";
   font-size: $titulo-paginas;
   letter-spacing: normal;
 }
@@ -524,7 +519,7 @@
 @include menupag(absolute,310px);
 }
 .funda-titulo {
-  font-family: "menu";
+  font-family: "$title";
   font-size: $titulo-paginas;
   letter-spacing: normal;
 }
@@ -561,74 +556,71 @@
   }
 }
 }
-// BOLSO MATERO
-
-.page{
-  .page{
-    display: grid;
-    width: 100%;
-    grid-template-areas:
+// MATERO
+.menupages {
+ @include menupag(absolute,310px);
+}
+.mate-titulo {
+  font-family: "$title";
+  font-size: $titulo-paginas;
+  letter-spacing: normal;
+  .subtitulo-titulos {
+    padding: 0px;
+  }
+}
+.page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
     "head head"
     "nav nav"
     "main main"
     "foot foot";
   grid-template-rows: 270px 60px;
   grid-template-columns: 100px;
-  
-  header{
+  header {
     grid-area: head;
     background-color: $color-head;
   }
-  nav{
+  nav {
     grid-area: nav;
     height: 65px;
     background-color: $color-nav;
   }
-  main{
+  main {
     grid-area: main;
     display: flex;
     background-color: $color-main;
   }
 }
-.menupages {
-@include menupag(absolute,310px);
-}
-.mate-titulo {
-  font-family: "menu";
-  font-size: $titulo-paginas;
-  letter-spacing: normal;
-}
-.subtitulo-titulos {
-  padding: 0px;
-}
 .container_mate {
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   background-color: #f8e9f2;
-    .bm {
+  .bm {
     display: flex;
-    @include ancho-alto(415px,400px);
+   @include ancho-alto(415px,400px);
     padding: 40px 50px;
     border-radius: 15%;
-    }
-    .nombre-producto{
-      font-size: $name-producto;
-      font-weight: bold;
-      text-align: center;
-      font-family: "$comun";
-    }
-    .precio-producto{
-      text-align: center;
-      font-size: $precio-producto;
-      font-family: "$comun";
-    }
-    .cuotas-producto{
-      text-align: center;
-      font-family: "$comun";
-    }
+  }
+  .nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "$comun";
+  }
+  .precio-producto {
+    text-align: center;
+    font-size: 18px;
+    font-family: "$comun";
+    padding: 8px;
+  }
+  .cuotas-producto {
+    text-align: center;
+    font-family: "$comun";
   }
 }
 // SECCION COMPLEMENTO
@@ -663,7 +655,7 @@
 @include menupag(absolute,310px);
 }
 .complemento-titulo {
-  font-family: "menu";
+  font-family: "$title";
   font-size: $titulo-paginas;
   letter-spacing: normal;
 }
@@ -700,7 +692,6 @@
     }
   }
 }
-
 // SOBRES
 .page{
   .page{
@@ -733,7 +724,7 @@
 @include menupag(absolute,310px);
 }
 .sobres-titulo {
-  font-family: "menu";
+  font-family: "$title";
   font-size: $titulo-paginas;
   letter-spacing: normal;
 }
